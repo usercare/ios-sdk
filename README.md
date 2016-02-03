@@ -1,4 +1,4 @@
-# ios-sdk-release
+# ios-sdk
 UserCare iOS SDK Release
 
 This repository holds the iOS SDK release artifacts needed for Cocoapods. It includes the 
