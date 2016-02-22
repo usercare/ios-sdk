@@ -30,6 +30,8 @@
 @property (nonatomic, strong) NSString *messagingNewMessage;
 @property (nonatomic, strong) NSString *messagingDateFormat;
 @property (nonatomic, strong) NSString *greetingMessage;
+@property (nonatomic, strong) NSString *messagingHeaderTitle;
+@property (nonatomic, strong) NSString *messagingSettingsTitle;
 
 @property (nonatomic, strong) NSString *messagingPromptTitle;
 @property (nonatomic, strong) NSString *messagingPromptPlaceholderName;

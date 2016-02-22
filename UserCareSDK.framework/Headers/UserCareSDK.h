@@ -16,3 +16,5 @@ FOUNDATION_EXPORT const unsigned char UserCareSDKVersionString[];
 #import <UserCareSDK/UCSettings.h>
 #import <UserCareSDK/UCButtonStyle.h>
 #import <UserCareSDK/UCTextStyle.h>
+#import <UserCareSDK/UCEvent.h>
+#import <UserCareSDK/UCUtils.h>

@@ -2,6 +2,7 @@
 
 @class SKProduct;
 @class SKPaymentTransaction;
+@class UCEvent;
 
 static NSString *const kUCEventFaqRead = @"faq_read";
 static NSString *const kUCEventActionInvoked = @"action_invoked";
@@ -28,5 +29,7 @@ static NSString *const kUCEventActionInvoked = @"action_invoked";
     @param parameters - dictionary of additional parameters
  */
 - (void)sendEvent:(NSString *)eventType withCustomParameters:(NSDictionary *)parameters;
+
+- (void)sendEventWithEvent:(UCEvent *)event;
 
 @end

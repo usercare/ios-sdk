@@ -13,6 +13,7 @@
 + (NSString *)currentFormattedTimeForEvents;
 + (NSString *)currentFormattedTime;
 + (NSString *)formattedTimeWithDate:(NSDate *)date;
++ (NSString *)formattedTimeForChatWithDate:(NSDate *)date;
 + (NSDate *)dateFromString:(NSString *)string;
 + (NSString *)formattedTicketDateWithDateString:(NSString *)initialDateString;
 
