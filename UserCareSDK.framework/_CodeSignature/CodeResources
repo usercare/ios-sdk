@@ -6,15 +6,15 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		kJTqnAFrkT6PhPy1llPU5UK6prA=
+		L/V6BLfOgSMIc4foqP+6nUY8x6Q=
 		</data>
 		<key>FAQStoryboard.storyboardc/1ma-CO-VIh-view-LJp-VH-g9q.nib</key>
 		<data>
-		5m6Ht3SLXa+077wSAqfJDiOWRd4=
+		UecHOE8p0kWtKKkRtkm6m3x8EXM=
 		</data>
 		<key>FAQStoryboard.storyboardc/7h5-Zt-xjO-view-zET-7z-Mso.nib</key>
 		<data>
-		YQJSd1ZD4kWtjkEsbUGBEVkKaY8=
+		qGGneKZDINLc/0ocTsHuXWuvBnc=
 		</data>
 		<key>FAQStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>FAQStoryboard.storyboardc/UCFAQCategoriesTableViewController.nib</key>
 		<data>
-		ctp6UQAEipBDlu6kkR+F+I5xBPQ=
+		CpnnO0WMoKRjC62/EdxxUg8humU=
 		</data>
 		<key>FAQStoryboard.storyboardc/UCFAQEntriesTableViewController.nib</key>
 		<data>
-		+U76yJJTNSYK8YPV7jtol4YMklk=
+		PcYCcKV4M222Cg1acFKwVvjq3yY=
 		</data>
 		<key>FAQStoryboard.storyboardc/UCFAQEntryViewController.nib</key>
 		<data>
-		WINvU/3utUU6B2EAcHacQIiwhW0=
+		UPR5eebXn5J703s8SHHH6wnQ+no=
 		</data>
 		<key>FAQStoryboard.storyboardc/xhC-NO-OCI-view-ocM-rQ-zNM.nib</key>
 		<data>
-		aDCQ8c+DEGzWfoM651i/24u/l2w=
+		nBhyTRuos0HTYNC9rGY8abp+jM4=
 		</data>
 		<key>Headers/UCActionEntity.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/UCEventLogger.h</key>
 		<data>
-		KNktgGVD3DMIr9TU/Llow8zohJE=
+		tHGEumA7S+yH5pKipk7LXDJ+Hto=
 		</data>
 		<key>Headers/UCEventsPurchaseHelper.h</key>
 		<data>
@@ -64,6 +64,10 @@
 		<data>
 		2Xqpv/NvWLKZRCJHX/gR/r8mPG4=
 		</data>
+		<key>Headers/UCFAQStyle.h</key>
+		<data>
+		egP64BBnLlVK17p9kZI8f/iOz6s=
+		</data>
 		<key>Headers/UCImageStyle.h</key>
 		<data>
 		F2WABlFGoRhEmKDbHwt0RZkBaTo=
@@ -72,9 +76,13 @@
 		<data>
 		+JztK6+tGFPJgzCLC8lxFOSMCy0=
 		</data>
+		<key>Headers/UCLiveChatStyle.h</key>
+		<data>
+		fCwKN2su8ExBAgSKYO/rBv8vFH0=
+		</data>
 		<key>Headers/UCLocalizedStringsDataSource.h</key>
 		<data>
-		hv+SpOaSN4CwcCtgID53o519LY8=
+		wCf2dm2w6JPr1pD8JlylL18DayA=
 		</data>
 		<key>Headers/UCManager.h</key>
 		<data>
@@ -98,11 +106,11 @@
 		</data>
 		<key>Headers/UserCareSDK.h</key>
 		<data>
-		ahpBDixlrcnv7vcDVRUNlTNBOqA=
+		rT0Pj31PxZ+lTT2zdcJkZsKauvo=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		lw3lsf8bVV+d2iDZpAHyNf42/eI=
+		rX+sGwE+9MrEx4XvMgT3COSj/fg=
 		</data>
 		<key>LiveChatStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -110,27 +118,27 @@
 		</data>
 		<key>LiveChatStoryboard.storyboardc/UINavigationController-Bjs-vY-UVa.nib</key>
 		<data>
-		8NQPRA9BRIWiOc5pdt1dxPW7yH8=
+		5bleCsJbyDswXiSGl7q17QZwErY=
 		</data>
 		<key>LiveChatStoryboard.storyboardc/UIViewController-l02-rj-Qgi.nib</key>
 		<data>
-		bQrcBx/s2YP6pjhJbXYWxFfzy88=
+		DyUrTsc/6V0rSAmzObbXXYOfKJ4=
 		</data>
 		<key>LiveChatStoryboard.storyboardc/UIViewController-pgr-hw-IX6.nib</key>
 		<data>
-		W4GPhOw9bUN4DBeYRGrBfPuhYP8=
+		2xoMZBF09BAg7bbJN8GN1RmSmuY=
 		</data>
 		<key>LiveChatStoryboard.storyboardc/Upo-5b-aS9-view-6Jd-ld-jKM.nib</key>
 		<data>
-		q5jNC9oLlXGf8IeY5Dc54KiDqjs=
+		TFLzu6OunyCTIadZRTtWYyNN/8I=
 		</data>
 		<key>LiveChatStoryboard.storyboardc/l02-rj-Qgi-view-aUp-td-Rdt.nib</key>
 		<data>
-		kLZL9DMcT5HdUzHEuuUWKxil/P4=
+		ETgmzRhMVAs0dEadMCS2qhC/Y5g=
 		</data>
 		<key>LiveChatStoryboard.storyboardc/pgr-hw-IX6-view-jaN-MD-4yE.nib</key>
 		<data>
-		MfaqdGtwL3fvn65HcKwWQFm+IZQ=
+		0b/G7ydUwMkV1va8BlxCdN5bfr4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -142,62 +150,62 @@
 		</data>
 		<key>MyTicketsStoryboard.storyboardc/Jgb-8x-7jA-view-Zq4-Aq-C2s.nib</key>
 		<data>
-		bLwS0X18OnSYz5i0Had8knVIHWI=
+		mKuRZDb+4QCNQCIDIn6io9D7tzI=
 		</data>
 		<key>MyTicketsStoryboard.storyboardc/UIViewController-Jgb-8x-7jA.nib</key>
 		<data>
-		yKZsLHXq+Bm7qUHcXwTcjOW83Pg=
+		5yuvvcPT3gbeYJkRWtO+kkzJQCw=
 		</data>
 		<key>MyTicketsStoryboard.storyboardc/UIViewController-wbE-ap-gu0.nib</key>
 		<data>
-		wGjaim+TdogU2GV/rppsEirTnas=
+		N3srS432bQxfXDULNaIfC0kltMc=
 		</data>
 		<key>MyTicketsStoryboard.storyboardc/wbE-ap-gu0-view-oBw-sb-hPy.nib</key>
 		<data>
-		IOJrjcTXuM7jlLY3Q8apwDr5+gU=
+		+94WRxH2iztGUOtZmBxkYeNyk2Q=
 		</data>
 		<key>UCMessagesCollectionViewCellIncoming.nib</key>
 		<data>
-		ESs/flu5p+o+8UicFKysz+HNH/A=
+		19uItIqqZzqpVdRBLxHskDnX1KQ=
 		</data>
 		<key>UCMessagesCollectionViewCellOutgoing.nib</key>
 		<data>
-		fPwzUpM1ZVxLCTmPBP7Sk6NbrCI=
+		lk1KhHS5/aVUc50p3apqGVMRlKI=
 		</data>
 		<key>UCMessagesLoadEarlierHeaderView.nib</key>
 		<data>
-		rxSYzaS0/Pgs0dEH81XuOJCYe3o=
+		hePD/3i6OWzhC6rgj70KI2xm6kg=
 		</data>
 		<key>UCMessagesToolbarContentView.nib</key>
 		<data>
-		/SP6pImyy5IUnX5pq03DyGgzhBY=
+		5g2vHg9SQWNbKIZW6QhGlkvtOKY=
 		</data>
 		<key>UCMessagesTypingIndicatorFooterView.nib</key>
 		<data>
-		XWNOf7bba6Kj2omVtCIgXjPs/Bw=
+		WLP8YcY5iA4z4IRrDO1MOVd/loM=
 		</data>
 		<key>UCNegativeFeedbackView.nib</key>
 		<data>
-		4Dc3a5J47m8Ab4KAxwQGLficxIQ=
+		ncI+lBE02pXO3IMEk3ryPnmn0Fk=
 		</data>
 		<key>UCPositiveFeedbackView.nib</key>
 		<data>
-		UFlqby7GhNZxDBl3/OuWWki0Rww=
+		7EGV1xkxyfNZD2leMiaMiOFCyDo=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		kJTqnAFrkT6PhPy1llPU5UK6prA=
+		L/V6BLfOgSMIc4foqP+6nUY8x6Q=
 		</data>
 		<key>FAQStoryboard.storyboardc/1ma-CO-VIh-view-LJp-VH-g9q.nib</key>
 		<data>
-		5m6Ht3SLXa+077wSAqfJDiOWRd4=
+		UecHOE8p0kWtKKkRtkm6m3x8EXM=
 		</data>
 		<key>FAQStoryboard.storyboardc/7h5-Zt-xjO-view-zET-7z-Mso.nib</key>
 		<data>
-		YQJSd1ZD4kWtjkEsbUGBEVkKaY8=
+		qGGneKZDINLc/0ocTsHuXWuvBnc=
 		</data>
 		<key>FAQStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -205,19 +213,19 @@
 		</data>
 		<key>FAQStoryboard.storyboardc/UCFAQCategoriesTableViewController.nib</key>
 		<data>
-		ctp6UQAEipBDlu6kkR+F+I5xBPQ=
+		CpnnO0WMoKRjC62/EdxxUg8humU=
 		</data>
 		<key>FAQStoryboard.storyboardc/UCFAQEntriesTableViewController.nib</key>
 		<data>
-		+U76yJJTNSYK8YPV7jtol4YMklk=
+		PcYCcKV4M222Cg1acFKwVvjq3yY=
 		</data>
 		<key>FAQStoryboard.storyboardc/UCFAQEntryViewController.nib</key>
 		<data>
-		WINvU/3utUU6B2EAcHacQIiwhW0=
+		UPR5eebXn5J703s8SHHH6wnQ+no=
 		</data>
 		<key>FAQStoryboard.storyboardc/xhC-NO-OCI-view-ocM-rQ-zNM.nib</key>
 		<data>
-		aDCQ8c+DEGzWfoM651i/24u/l2w=
+		nBhyTRuos0HTYNC9rGY8abp+jM4=
 		</data>
 		<key>Headers/UCActionEntity.h</key>
 		<data>
@@ -237,7 +245,7 @@
 		</data>
 		<key>Headers/UCEventLogger.h</key>
 		<data>
-		KNktgGVD3DMIr9TU/Llow8zohJE=
+		tHGEumA7S+yH5pKipk7LXDJ+Hto=
 		</data>
 		<key>Headers/UCEventsPurchaseHelper.h</key>
 		<data>
@@ -247,6 +255,10 @@
 		<data>
 		2Xqpv/NvWLKZRCJHX/gR/r8mPG4=
 		</data>
+		<key>Headers/UCFAQStyle.h</key>
+		<data>
+		egP64BBnLlVK17p9kZI8f/iOz6s=
+		</data>
 		<key>Headers/UCImageStyle.h</key>
 		<data>
 		F2WABlFGoRhEmKDbHwt0RZkBaTo=
@@ -255,9 +267,13 @@
 		<data>
 		+JztK6+tGFPJgzCLC8lxFOSMCy0=
 		</data>
+		<key>Headers/UCLiveChatStyle.h</key>
+		<data>
+		fCwKN2su8ExBAgSKYO/rBv8vFH0=
+		</data>
 		<key>Headers/UCLocalizedStringsDataSource.h</key>
 		<data>
-		hv+SpOaSN4CwcCtgID53o519LY8=
+		wCf2dm2w6JPr1pD8JlylL18DayA=
 		</data>
 		<key>Headers/UCManager.h</key>
 		<data>
@@ -281,7 +297,7 @@
 		</data>
 		<key>Headers/UserCareSDK.h</key>
 		<data>
-		ahpBDixlrcnv7vcDVRUNlTNBOqA=
+		rT0Pj31PxZ+lTT2zdcJkZsKauvo=
 		</data>
 		<key>LiveChatStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -289,27 +305,27 @@
 		</data>
 		<key>LiveChatStoryboard.storyboardc/UINavigationController-Bjs-vY-UVa.nib</key>
 		<data>
-		8NQPRA9BRIWiOc5pdt1dxPW7yH8=
+		5bleCsJbyDswXiSGl7q17QZwErY=
 		</data>
 		<key>LiveChatStoryboard.storyboardc/UIViewController-l02-rj-Qgi.nib</key>
 		<data>
-		bQrcBx/s2YP6pjhJbXYWxFfzy88=
+		DyUrTsc/6V0rSAmzObbXXYOfKJ4=
 		</data>
 		<key>LiveChatStoryboard.storyboardc/UIViewController-pgr-hw-IX6.nib</key>
 		<data>
-		W4GPhOw9bUN4DBeYRGrBfPuhYP8=
+		2xoMZBF09BAg7bbJN8GN1RmSmuY=
 		</data>
 		<key>LiveChatStoryboard.storyboardc/Upo-5b-aS9-view-6Jd-ld-jKM.nib</key>
 		<data>
-		q5jNC9oLlXGf8IeY5Dc54KiDqjs=
+		TFLzu6OunyCTIadZRTtWYyNN/8I=
 		</data>
 		<key>LiveChatStoryboard.storyboardc/l02-rj-Qgi-view-aUp-td-Rdt.nib</key>
 		<data>
-		kLZL9DMcT5HdUzHEuuUWKxil/P4=
+		ETgmzRhMVAs0dEadMCS2qhC/Y5g=
 		</data>
 		<key>LiveChatStoryboard.storyboardc/pgr-hw-IX6-view-jaN-MD-4yE.nib</key>
 		<data>
-		MfaqdGtwL3fvn65HcKwWQFm+IZQ=
+		0b/G7ydUwMkV1va8BlxCdN5bfr4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -321,47 +337,47 @@
 		</data>
 		<key>MyTicketsStoryboard.storyboardc/Jgb-8x-7jA-view-Zq4-Aq-C2s.nib</key>
 		<data>
-		bLwS0X18OnSYz5i0Had8knVIHWI=
+		mKuRZDb+4QCNQCIDIn6io9D7tzI=
 		</data>
 		<key>MyTicketsStoryboard.storyboardc/UIViewController-Jgb-8x-7jA.nib</key>
 		<data>
-		yKZsLHXq+Bm7qUHcXwTcjOW83Pg=
+		5yuvvcPT3gbeYJkRWtO+kkzJQCw=
 		</data>
 		<key>MyTicketsStoryboard.storyboardc/UIViewController-wbE-ap-gu0.nib</key>
 		<data>
-		wGjaim+TdogU2GV/rppsEirTnas=
+		N3srS432bQxfXDULNaIfC0kltMc=
 		</data>
 		<key>MyTicketsStoryboard.storyboardc/wbE-ap-gu0-view-oBw-sb-hPy.nib</key>
 		<data>
-		IOJrjcTXuM7jlLY3Q8apwDr5+gU=
+		+94WRxH2iztGUOtZmBxkYeNyk2Q=
 		</data>
 		<key>UCMessagesCollectionViewCellIncoming.nib</key>
 		<data>
-		ESs/flu5p+o+8UicFKysz+HNH/A=
+		19uItIqqZzqpVdRBLxHskDnX1KQ=
 		</data>
 		<key>UCMessagesCollectionViewCellOutgoing.nib</key>
 		<data>
-		fPwzUpM1ZVxLCTmPBP7Sk6NbrCI=
+		lk1KhHS5/aVUc50p3apqGVMRlKI=
 		</data>
 		<key>UCMessagesLoadEarlierHeaderView.nib</key>
 		<data>
-		rxSYzaS0/Pgs0dEH81XuOJCYe3o=
+		hePD/3i6OWzhC6rgj70KI2xm6kg=
 		</data>
 		<key>UCMessagesToolbarContentView.nib</key>
 		<data>
-		/SP6pImyy5IUnX5pq03DyGgzhBY=
+		5g2vHg9SQWNbKIZW6QhGlkvtOKY=
 		</data>
 		<key>UCMessagesTypingIndicatorFooterView.nib</key>
 		<data>
-		XWNOf7bba6Kj2omVtCIgXjPs/Bw=
+		WLP8YcY5iA4z4IRrDO1MOVd/loM=
 		</data>
 		<key>UCNegativeFeedbackView.nib</key>
 		<data>
-		4Dc3a5J47m8Ab4KAxwQGLficxIQ=
+		ncI+lBE02pXO3IMEk3ryPnmn0Fk=
 		</data>
 		<key>UCPositiveFeedbackView.nib</key>
 		<data>
-		UFlqby7GhNZxDBl3/OuWWki0Rww=
+		7EGV1xkxyfNZD2leMiaMiOFCyDo=
 		</data>
 	</dict>
 	<key>rules</key>

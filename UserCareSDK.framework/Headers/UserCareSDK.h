@@ -18,3 +18,10 @@ FOUNDATION_EXPORT const unsigned char UserCareSDKVersionString[];
 #import <UserCareSDK/UCTextStyle.h>
 #import <UserCareSDK/UCEvent.h>
 #import <UserCareSDK/UCUtils.h>
+#import <UserCareSDK/UCFAQDialogStyle.h>
+#import <UserCareSDK/UCImageStyle.h>
+#import <UserCareSDK/UCLabelStyle.h>
+#import <UserCareSDK/UCTicketStyle.h>
+#import <UserCareSDK/UCLocalizedStringsDataSource.h>
+#import <UserCareSDK/UCLiveChatStyle.h>
+#import <UserCareSDK/UCFAQStyle.h>

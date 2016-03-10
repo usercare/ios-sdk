@@ -3,8 +3,8 @@
 @class SKProduct;
 @class SKPaymentTransaction;
 @class UCEvent;
+@class UCFAQEntry;
 
-static NSString *const kUCEventFaqRead = @"faq_read";
 static NSString *const kUCEventActionInvoked = @"action_invoked";
 
 /**
@@ -30,6 +30,22 @@ static NSString *const kUCEventActionInvoked = @"action_invoked";
  */
 - (void)sendEvent:(NSString *)eventType withCustomParameters:(NSDictionary *)parameters;
 
+/**
+ Logs custom event to server.
+ @param eventType - user-defined type of event. Should be NSString no longer than 63 characters, alphanumeric with hyphens allowed.
+ */
+- (void)sendEvent:(NSString *)eventType;
+
+/**
+ Logs custom event to server.
+ @param event - user-defined event. Should be UCEvent instance.
+ */
 - (void)sendEventWithEvent:(UCEvent *)event;
+
+/**
+ Logs FAQ read event to server.
+ @param faqEntry - cureent faq. Should be UCFAQEntry instance.
+ */
+- (void)sendFaqReadEvent:(UCFAQEntry *)faqEntry;
 
 @end

@@ -14,13 +14,10 @@
 
 @property (nonatomic, strong) NSString *faqSearchTitle;
 @property (nonatomic, strong) NSString *faqSearchNoResults;
-
 @property (nonatomic, strong) NSString *faqTopQuestions;
 @property (nonatomic, strong) NSString *faqSections;
-
 @property (nonatomic, strong) NSString *faqSearchSectionTitle;
 @property (nonatomic, strong) NSString *faqSearchHint;
-
 @property (nonatomic, strong) NSString *faqEscalationMessage;
 @property (nonatomic, strong) NSString *faqTitle;
 
