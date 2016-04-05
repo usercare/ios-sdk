@@ -6,12 +6,8 @@ FOUNDATION_EXPORT double UserCareSDKVersionNumber;
 //! Project version string for UserCareSDK.
 FOUNDATION_EXPORT const unsigned char UserCareSDKVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <UserCareSDK/PublicHeader.h>
-
-
 #import <UserCareSDK/UCManager.h>
 #import <UserCareSDK/UCEventLogger.h>
-#import <UserCareSDK/UCEventsPurchaseHelper.h>
 #import <UserCareSDK/UCActionEntity.h>
 #import <UserCareSDK/UCSettings.h>
 #import <UserCareSDK/UCButtonStyle.h>
@@ -25,3 +21,6 @@ FOUNDATION_EXPORT const unsigned char UserCareSDKVersionString[];
 #import <UserCareSDK/UCLocalizedStringsDataSource.h>
 #import <UserCareSDK/UCLiveChatStyle.h>
 #import <UserCareSDK/UCFAQStyle.h>
+#import <UserCareSDK/UCCacheSettings.h>
+#import <UserCareSDK/UCLoggerSettings.h>
+#import <UserCareSDK/UCLiveChatClient.h>

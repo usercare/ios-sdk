@@ -8,33 +8,78 @@
 @class UCLiveChatClient;
 @class UCActionEntity;
 @class UCSettings;
+@class UCCacheSettings;
+@class UCLoggerSettings;
 
+/**
+ Block used into startService method. Called when initialization is successful.
+ */
 typedef void(^UCInitializeSuccessfulBlock)(void);
+
+/**
+ Block used into startService method. Called when initialization is failed.
+ */
 typedef void(^UCInitializeFailedBlock)(NSError *error);
 
+/**
+ Block used into updateMyTickets method.
+ */
+typedef void(^UCMyTicketsUpdatedBlock)(NSArray *myTickets);
+
+/**
+ UserCare Manager delegate.
+ */
 @protocol UCDelegate <NSObject>
 
+/**
+ Method called when any action occured.
+ @param actionEntity - action entity received in message
+ */
 - (void)onActionMessageReceived:(UCActionEntity *)actionEntity;
+
+/**
+ Method called when system message received.
+ @param message - system message
+ */
 - (void)onSystemMessageReceived:(NSString *)message;
+
+/**
+ Method called when supporter message received.
+ @param message - supporter message
+ */
 - (void)onSupporterMessageReceived:(NSString *)message;
+/**
+ Method called when UserCare SDK failed with error.
+ @param error - received error
+ */
 - (void)usercareSdkFailedWithError:(NSError *)error;
+
+/**
+ Method called when UserCare SDK failed with error.
+ @param error - received error
+ @param statusCode - status code
+ */
 - (void)usercareSdkFailedWithError:(NSError *)error withStatusCode:(NSInteger)statusCode;
 
 @end
 
-/** Model class containing initialization settings for UserCare SDK. Initialize instance of it, set required parameters and pass to startServiceWithSettings: completion:failure:
+/** 
+ Model class containing initialization settings for UserCare SDK. Initialize instance of it, set required parameters and pass to startServiceWithSettings: completion:failure:
  */
 @interface UCManagerSettings : NSObject
 
-/** Push notifications token received on device registration.
+/**
+ Push notifications token received on device registration.
  */
 @property (nonatomic, strong) NSData *pushNotificationToken;
 
-/** Application identifier received from UserCare.
+/** 
+ Application identifier received from UserCare.
  */
 @property (nonatomic, strong) NSString *appId;
 
-/** Customer identifier received from UserCare.
+/** 
+ Customer identifier received from UserCare.
  */
 @property (nonatomic, strong) NSString *customerId;
 
@@ -42,6 +87,11 @@ typedef void(^UCInitializeFailedBlock)(NSError *error);
   Key for Events.
  */
 @property (nonatomic, strong) NSString *eventsAPIKey;
+
+/**
+ Defines whether user settings will be automatically presented if username doesn't set.
+ */
+@property (nonatomic, assign) BOOL shouldShowUserSettings;
 
 /**
  Optional property. Will be seen in agent panel. Unless specified here SDK will prompt user to enter it upon opening live chat.
@@ -57,6 +107,16 @@ typedef void(^UCInitializeFailedBlock)(NSError *error);
  Optional property. Will be seen in agent panel. Unless specified here SDK will prompt user to enter it upon opening live chat.
  */
 @property (nonatomic, strong) NSString *customerEmail;
+
+/**
+ Optional property. Will be used for definind caching policy. 
+ */
+@property (nonatomic, strong) UCCacheSettings *cacheSettings;
+
+/**
+ Optional property. Will be used for logging customizing.
+ */
+@property (nonatomic, strong) UCLoggerSettings *loggerSettings;
 
 @end
 
@@ -100,6 +160,9 @@ typedef void(^UCInitializeFailedBlock)(NSError *error);
  **/
 @property (nonatomic, readonly) BOOL isMyTicketsEnabled;
 
+/**
+ @brief Settings used for customization. Includes all styles for different components.
+ */
 @property (nonatomic, strong) UCSettings *settings;
 
 /**
@@ -132,7 +195,10 @@ typedef void(^UCInitializeFailedBlock)(NSError *error);
  */
 - (void)presentMyTicketsWithParent:(UIViewController *)parent;
 
-
+/**
+ Opens FAQ with provided URL.
+ @param url - NSString represantation of the FAQ URL. Should be in format "FAQ-XXXX".
+ */
 - (void)openURL:(NSString *)url;
 
 /** 
@@ -144,6 +210,14 @@ typedef void(^UCInitializeFailedBlock)(NSError *error);
 
  */
 + (UCManager *)startServiceWithSettings:(UCManagerSettings *)settings completion:(UCInitializeSuccessfulBlock)completionBlock failure:(UCInitializeFailedBlock)failureBlock;
+
+
+/**
+ @brief Receives new tickets from server. Can be called if startService method was called before.
+ @param completionBlock - completion block called after my tickets update.
+ 
+ */
++ (void)updateMyTicketsWithCompletion:(UCMyTicketsUpdatedBlock)completionBlock;
 
 /**
 * Creates VIP lounge button. Can be called anytime, returns invisible button if VIP lounge is unavailable. Visibility will be updated automatically.
@@ -195,6 +269,11 @@ Receives entry point for chat interface.
 
 */
 - (UCLiveChatClient *)getChatClient;
+
+/**
+ Clears cache for all SDK requests and responses
+ */
+- (void)clearCache;
 
 #pragma clang diagnostic pop
 

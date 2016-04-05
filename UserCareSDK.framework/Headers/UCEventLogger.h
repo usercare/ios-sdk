@@ -1,11 +1,7 @@
 #import <Foundation/Foundation.h>
 
-@class SKProduct;
-@class SKPaymentTransaction;
 @class UCEvent;
 @class UCFAQEntry;
-
-static NSString *const kUCEventActionInvoked = @"action_invoked";
 
 /**
  Main interface of event SDK. Initialize it with startLoggingWithAPISecret: . First get API secret from developer console.
@@ -44,7 +40,7 @@ static NSString *const kUCEventActionInvoked = @"action_invoked";
 
 /**
  Logs FAQ read event to server.
- @param faqEntry - cureent faq. Should be UCFAQEntry instance.
+ @param faqEntry - current faq. Should be UCFAQEntry instance.
  */
 - (void)sendFaqReadEvent:(UCFAQEntry *)faqEntry;
 

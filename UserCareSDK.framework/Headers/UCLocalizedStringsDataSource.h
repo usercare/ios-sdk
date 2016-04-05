@@ -11,6 +11,8 @@
 @property (nonatomic, strong) NSString *negativeTitle;
 @property (nonatomic, strong) NSString *negativeText;
 @property (nonatomic, strong) NSString *negativeMessageAgent;
+@property (nonatomic, strong) NSString *positiveTitle;
+@property (nonatomic, strong) NSString *positiveText;
 
 @property (nonatomic, strong) NSString *faqSearchTitle;
 @property (nonatomic, strong) NSString *faqSearchNoResults;

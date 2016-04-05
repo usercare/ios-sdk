@@ -11,6 +11,7 @@
 @property (nonatomic, strong) UCTextStyle *userSettingsFirstNameStyle;
 @property (nonatomic, strong) UCTextStyle *userSettingsLastNameStyle;
 @property (nonatomic, strong) UCTextStyle *userSettingsEmailStyle;
+@property (nonatomic, strong) UCTextStyle *messagingEntryBoxStyle;
 
 @property (nonatomic, strong) UCLabelStyle *timestampLabelStyle;
 @property (nonatomic, strong) UCLabelStyle *faqLinkStyle;
