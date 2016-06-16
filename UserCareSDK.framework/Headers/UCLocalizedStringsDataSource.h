@@ -22,6 +22,8 @@
 @property (nonatomic, strong) NSString *faqSearchHint;
 @property (nonatomic, strong) NSString *faqEscalationMessage;
 @property (nonatomic, strong) NSString *faqTitle;
+@property (nonatomic, strong) NSString *noFAQsTitle;
+@property (nonatomic, strong) NSString *unknownFaqTitle;
 
 @property (nonatomic, strong) NSString *messagingSocketConnectionError;
 @property (nonatomic, strong) NSString *messagingDone;
@@ -39,6 +41,7 @@
 @property (nonatomic, strong) NSString *messagingPromptInvalid;
 @property (nonatomic, strong) NSString *messagingPromptEmpty;
 
+@property (nonatomic, strong) NSString *noTicketsTitle;
 @property (nonatomic, strong) NSString *ticketsTitle;
 @property (nonatomic, strong) NSString *ticketsOpenNew;
 @property (nonatomic, strong) NSString *ticketsTicketText;

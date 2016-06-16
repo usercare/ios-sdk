@@ -15,47 +15,47 @@ extern NSString *const kUCEventCrash;
 
 /**
  @brief Type of event. Should be NSString no longer than 63 characters, alphanumeric with hyphens allowed.NSString representation of time when event occured. Predefined event types are: kUCEventSession, kUCEventSessionEnd, kUCEventPurchaseSuccess, kUCEventPurchaseFailed
- **/
+ */
 @property (nonatomic, copy) NSString *eventType;
 
 /**
  @brief Product identifier of purchased product. Used for purchase events. Should be NSString.
- **/
+ */
 @property (nonatomic, copy) NSString *productId;
 
 /**
  @brief Product title of purchased product. Used for purchase events. Should be NSString.
- **/
+ */
 @property (nonatomic, copy) NSString *title;
 
 /**
  @brief Purchase transaction time. Used for purchase events. Should be NSString.
- **/
+ */
 @property (nonatomic, copy) NSString *transactionTime;
 
 /**
  @brief Price for the purchased product. Used for purchase events. Should be NSNumber.
- **/
+ */
 @property (nonatomic, copy) NSNumber *price;
 
 /**
  @brief Currency for the purchased product. Used for purchase events. Should be NSString in international currency format, for example "USD".
- **/
+ */
 @property (nonatomic, copy) NSString *priceCurrency;
 
 /**
  @brief Transaction identifier for purchase operation. Used for purchase events. Should be NSString.
- **/
+ */
 @property (nonatomic, copy) NSString *transactionId;
 
 /**
  @brief Custom parameters for any event. Should be NSDictionary.
- **/
+ */
 @property (nonatomic, strong) NSDictionary *customParameters;
 
 /**
  @brief Session start identifier. Used for session tracking events. Should be NSString.
- **/
+ */
 @property (nonatomic, copy) NSString *sessionStartId;
 
 /**

@@ -4,10 +4,10 @@
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wnullability-completeness"
 
-@class UCCustomButton;
 @class UCLiveChatClient;
 @class UCActionEntity;
 @class UCSettings;
+@class UCLocalizedStringsDataSource;
 @class UCCacheSettings;
 @class UCLoggerSettings;
 
@@ -89,11 +89,6 @@ typedef void(^UCMyTicketsUpdatedBlock)(NSArray *myTickets);
 @property (nonatomic, strong) NSString *eventsAPIKey;
 
 /**
- Defines whether user settings will be automatically presented if username doesn't set.
- */
-@property (nonatomic, assign) BOOL shouldShowUserSettings;
-
-/**
  Optional property. Will be seen in agent panel. Unless specified here SDK will prompt user to enter it upon opening live chat.
  */
 @property (nonatomic, strong) NSString *customerFirstName;
@@ -121,49 +116,54 @@ typedef void(^UCMyTicketsUpdatedBlock)(NSArray *myTickets);
 @end
 
 /** 
- Main interface of UserCareSDK. Initialize it with startServiceWithSettings: completion:failure:
+ Main interface of UserCareSDK. Initialize it with startServiceWithSettings:completion:failure:
  */
 @interface UCManager : NSObject
 
 /**
   @brief Delegate for SDK callbacks.
- **/
+ */
 @property (nonatomic, weak) id <UCDelegate> delegate;
 
 /** This value may be false if SDK is not yet initialized, if live chat is disabled on agent panel or if user is ineligible for it.
  Method presentLiveChatWithParent: will have no effect in such case.
   @brief A Boolean indicating whether the live chat feature is available currently for this user.
- **/
+ */
 @property (nonatomic, readonly) BOOL isLiveChatEnabled;
 
 /** This value may be false if SDK is not yet initialized or if user is ineligible for vip lounge.
  Method presentVipLoungeWithParent: will have no effect in such case.
   @brief A Boolean indicating whether the vip lounge feature is available currently for this user.
- **/
+ */
 @property (nonatomic, readonly) BOOL isVIPLoungeEnabled;
 
 /** This value may be false if SDK is not yet initialized or if FAQ section is not filled on server side.
  Method presentFAQWithParent: will have no effect in such case.
   @brief A Boolean indicating whether the FAQ feature is available currently for this user.
- **/
+ */
 @property (nonatomic, readonly) BOOL isFAQEnabled;
 
 /** This value may be false if SDK is not yet initialized or if landing page is disabled on agent panel.
  Method presentLandingPageWithParent: will have no effect in such case.
   @brief A Boolean indicating whether the landing page is available currently for this user.
- **/
+ */
 @property (nonatomic, readonly) BOOL isLandingPageEnabled;
 
 /** This value may be false if SDK is not yet initialized or if user has no tickets yet.
  Method presentMyTicketsWithParent: will have no effect in such case.
   @brief A Boolean indicating whether the my tickets feature is available currently for this user.
- **/
+ */
 @property (nonatomic, readonly) BOOL isMyTicketsEnabled;
 
 /**
  @brief Settings used for customization. Includes all styles for different components.
  */
 @property (nonatomic, strong) UCSettings *settings;
+
+/**
+ @brief Localization Settings used for customization.
+ */
+@property (nonatomic, strong) UCLocalizedStringsDataSource *localizationSettings;
 
 /**
     @brief Shows  SDK contact us screen if possible. Property isLiveChatEnabled indicates whether this function is available.
@@ -273,7 +273,23 @@ Receives entry point for chat interface.
 /**
  Clears cache for all SDK requests and responses
  */
-- (void)clearCache;
++ (void)clearCache;
+
+#pragma mark - Device ID
+
+/**
+ Set device identifier that developer would like to use (such as IDFA or calculated) instead of default one (IDFV)
+ @param customDeviceId - custom identifier or nil to use default IDFV
+ */
++ (void)setDeviceId: (NSString *)customDeviceId;
+
+/**
+ * Returns device identifier. Default value is identifier for vendor (IDFV), can be set custom identifier via UCDeviceDataManager::setDeviceIdentifier
+ @return IDFV or custom device identifier
+ */
++ (NSString *)deviceId;
+
+
 
 #pragma clang diagnostic pop
 

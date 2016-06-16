@@ -6,35 +6,35 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		X30DgR8OVcMeGsgMUHAtpRJBdRY=
+		TyenwQbIHCxwWGHp3si1j0GwRVU=
 		</data>
 		<key>FAQStoryboard.storyboardc/1ma-CO-VIh-view-LJp-VH-g9q.nib</key>
 		<data>
-		ul/14pI37lEXfGebkPzeNC1CigM=
+		C2S+cN73d6rB8yOKQZMmTlXi1wQ=
 		</data>
 		<key>FAQStoryboard.storyboardc/7h5-Zt-xjO-view-zET-7z-Mso.nib</key>
 		<data>
-		3iBkvY4KVXYe48GOOMamz7iEQmI=
+		MoKuqTVAWh1j7NXXrNiLh4EOoQM=
 		</data>
 		<key>FAQStoryboard.storyboardc/Info.plist</key>
 		<data>
-		yJauQ2Ta3vc56Ja9R9x8mC97NGc=
+		QxwSV93LFxfoxQPLx0ythMu6BKw=
 		</data>
 		<key>FAQStoryboard.storyboardc/UCFAQCategoriesTableViewController.nib</key>
 		<data>
-		tpJldXoVWOP/p/xlsmZ+BvxZh9M=
+		IUvSDeJtimIImm9a+sFQWzZCNmo=
 		</data>
 		<key>FAQStoryboard.storyboardc/UCFAQEntriesTableViewController.nib</key>
 		<data>
-		CX5W1/DzjK3A4deSNpZBIEutNRk=
+		0zDfVzMJNpN73zMzCQZ4bIMElqU=
 		</data>
 		<key>FAQStoryboard.storyboardc/UCFAQEntryViewController.nib</key>
 		<data>
-		pWw17HPNkZcmtM+II0OwSqTiw2Q=
+		LBql8rWVz3bYheBC0aczPDMzq8s=
 		</data>
 		<key>FAQStoryboard.storyboardc/xhC-NO-OCI-view-ocM-rQ-zNM.nib</key>
 		<data>
-		QRRds0sC5MhqtQPxIaxbgfOvb1I=
+		rpmqt2OiZPvcDf9UQDj03wslFR8=
 		</data>
 		<key>Headers/UCActionEntity.h</key>
 		<data>
@@ -42,19 +42,23 @@
 		</data>
 		<key>Headers/UCButtonStyle.h</key>
 		<data>
-		TZOH518JNj0S9NGcqZMna0GsiZY=
+		kW39hPaPPyY9BTgt4b96AnUo14I=
 		</data>
 		<key>Headers/UCCacheSettings.h</key>
 		<data>
 		FRVVq8EPjmMSkKJjqy/iBBMRCQo=
 		</data>
+		<key>Headers/UCCustomMessage.h</key>
+		<data>
+		e2MQ5r/PDgCb7HaAsCEpDBinscU=
+		</data>
 		<key>Headers/UCCustomizable.h</key>
 		<data>
-		9Ojvb9bLwRfX7hSuHLZkeRcY6PM=
+		Uv1mNxWaBQUIAOEH5eh2800nNLI=
 		</data>
 		<key>Headers/UCEvent.h</key>
 		<data>
-		ZfQpr0DuEMWcWVGDiGcstmiyfC8=
+		SAM+K9xbjkdnzTkYIKM0s3BPmJ8=
 		</data>
 		<key>Headers/UCEventLogger.h</key>
 		<data>
@@ -66,7 +70,11 @@
 		</data>
 		<key>Headers/UCFAQStyle.h</key>
 		<data>
-		egP64BBnLlVK17p9kZI8f/iOz6s=
+		jSjxR+V7+Q0eThYngnfHBzoqyzA=
+		</data>
+		<key>Headers/UCHeaderStyle.h</key>
+		<data>
+		YKhQDG8U0U7ULxd2I77kkSrpkZs=
 		</data>
 		<key>Headers/UCImageStyle.h</key>
 		<data>
@@ -82,11 +90,11 @@
 		</data>
 		<key>Headers/UCLiveChatStyle.h</key>
 		<data>
-		zhf4lATDFB1Q52p3cHeilXiUaRQ=
+		ZulcTtYdRLVzTqG0yR/iXYgh3rc=
 		</data>
 		<key>Headers/UCLocalizedStringsDataSource.h</key>
 		<data>
-		BPDTm+i1mfxPZHjms8KPlMTKwhU=
+		1Z3yf6C5bnbA5K2cRg14hQ+S/as=
 		</data>
 		<key>Headers/UCLoggerSettings.h</key>
 		<data>
@@ -94,11 +102,23 @@
 		</data>
 		<key>Headers/UCManager.h</key>
 		<data>
-		EJdqBgbMRnj9qd9TNixMuO17/go=
+		ffoBHSwt4RsC8HeZIM2hJcwj0lw=
+		</data>
+		<key>Headers/UCMessage.h</key>
+		<data>
+		rBS/nU19s/enUfmdh0x2OQg793E=
+		</data>
+		<key>Headers/UCMessageData.h</key>
+		<data>
+		otgq/D8N4W6W/B90kHcNk2WXLcg=
+		</data>
+		<key>Headers/UCMessageMediaData.h</key>
+		<data>
+		C+/IKC01QF1Gx4cMJHU1p4OLTN8=
 		</data>
 		<key>Headers/UCSettings.h</key>
 		<data>
-		+57ac/3mw+ZWhHtGvzEVKHJnVlY=
+		n++9APdYoGnzDa59XlpTZqgidtc=
 		</data>
 		<key>Headers/UCTextStyle.h</key>
 		<data>
@@ -106,7 +126,7 @@
 		</data>
 		<key>Headers/UCTicketStyle.h</key>
 		<data>
-		+nd7y2aekb7x9c6keLAngpN5xLs=
+		q5g7v/xlGlL2P5EB7eBZcXx0Vw0=
 		</data>
 		<key>Headers/UCUtils.h</key>
 		<data>
@@ -114,11 +134,11 @@
 		</data>
 		<key>Headers/UserCareSDK.h</key>
 		<data>
-		8CtYFrn6H0PapRpWG4Yuk+MJwKw=
+		vITjaEVl5OiBFvxIo0SM94MtxOE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+kjtqXTaEUBiYmNf/oiChDNY2fY=
+		u+OUpC1WjhBoaBtqONsAadQ8KT4=
 		</data>
 		<key>LiveChatStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -126,27 +146,27 @@
 		</data>
 		<key>LiveChatStoryboard.storyboardc/UINavigationController-Bjs-vY-UVa.nib</key>
 		<data>
-		8BXadQo6/rNbLQbP8ykqkSfrrOg=
+		Pxhcs/abfyBPN1+v+zpOKRE6pY4=
 		</data>
 		<key>LiveChatStoryboard.storyboardc/UIViewController-l02-rj-Qgi.nib</key>
 		<data>
-		ExgvqRQ1HuZCmc3xBy4EAUeWM54=
+		A28qlEWawVibt24fk6eJwRGEGLs=
 		</data>
 		<key>LiveChatStoryboard.storyboardc/UIViewController-pgr-hw-IX6.nib</key>
 		<data>
-		ZELS4HY5UByGhCY70qcaY2xAtmk=
+		Y2HjhDWBY15pkUu+j7wrRj2fObM=
 		</data>
 		<key>LiveChatStoryboard.storyboardc/Upo-5b-aS9-view-6Jd-ld-jKM.nib</key>
 		<data>
-		+Rr2Lury3dwPYA/u/TfqHbhS7xE=
+		yZvet2JnZs9pKbvvE4scyHllRiQ=
 		</data>
 		<key>LiveChatStoryboard.storyboardc/l02-rj-Qgi-view-aUp-td-Rdt.nib</key>
 		<data>
-		l0Y6vW2M+WEEnClERY/XhGL5Nd4=
+		jJ10Gz+pTPc4/TaVpSh3MMggwUM=
 		</data>
 		<key>LiveChatStoryboard.storyboardc/pgr-hw-IX6-view-jaN-MD-4yE.nib</key>
 		<data>
-		NkEe4KHz4Lrp2+r+hEuZtakrb9o=
+		CNz+rkxxDifO3QdIR653K5q0RyI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -158,47 +178,47 @@
 		</data>
 		<key>MyTicketsStoryboard.storyboardc/Jgb-8x-7jA-view-Zq4-Aq-C2s.nib</key>
 		<data>
-		F0qPKTma2HAPLmDRAYGv3o/sfZ4=
+		YoIe4BWgdg80Bb5QP7Uln2I03FI=
 		</data>
 		<key>MyTicketsStoryboard.storyboardc/UIViewController-Jgb-8x-7jA.nib</key>
 		<data>
-		W+JgD2Scx8vGfc6IUvi0YejTD3A=
+		PntmWiFk1WvOUzxJCD6Vq8ebCsw=
 		</data>
 		<key>MyTicketsStoryboard.storyboardc/UIViewController-wbE-ap-gu0.nib</key>
 		<data>
-		wt3Bd4Q3Fc/4mFOpW/a8o4UaaFY=
+		eJR9KVE8cEeMs7O2vEGlw+9/xL4=
 		</data>
 		<key>MyTicketsStoryboard.storyboardc/wbE-ap-gu0-view-oBw-sb-hPy.nib</key>
 		<data>
-		+LntuazAgjVjej26SOK6ij3yn9w=
+		ngb0LsNs9+CGxT0knnUoWiD+UHg=
 		</data>
 		<key>UCMessagesCollectionViewCellIncoming.nib</key>
 		<data>
-		xDlk5lcnliLJUQOKY1r0H33oznY=
+		JcZEUGOfiTAS3wyK6UcqAjHwg1c=
 		</data>
 		<key>UCMessagesCollectionViewCellOutgoing.nib</key>
 		<data>
-		71Uk+XOb4rzuLuxLEK3uLzqTIdI=
+		BJ+t0LEZnoS+32C4SoRqeL3Cfuk=
 		</data>
 		<key>UCMessagesLoadEarlierHeaderView.nib</key>
 		<data>
-		PXqUKLO5hSElMLN/CLc2mzD9Iqk=
+		1h8NMRZ0dQLi91LR5RNlr07dQxM=
 		</data>
 		<key>UCMessagesToolbarContentView.nib</key>
 		<data>
-		9SUqbLXnCUKO0p4YTKctxS4AumM=
+		NJvp8zRm7zCJ4vlEhePYABZoxHU=
 		</data>
 		<key>UCMessagesTypingIndicatorFooterView.nib</key>
 		<data>
-		MotoiqFFnGBBsbc8zui3NrK1kEY=
+		HemJkjE7DMKOyqc0vcbDmKHh1mU=
 		</data>
 		<key>UCNegativeFeedbackView.nib</key>
 		<data>
-		anYB+Oy0QqIsiPnnUuzrFTYrqe4=
+		itXUNxDYij/ql0eMVEh6um0N5W8=
 		</data>
 		<key>UCPositiveFeedbackView.nib</key>
 		<data>
-		TtvvB5pyUOpLmbt885KJPKvwEtI=
+		3qZ5Wm0W/G2aaaTcIQ4RTFE60BE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -207,88 +227,88 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			X30DgR8OVcMeGsgMUHAtpRJBdRY=
+			TyenwQbIHCxwWGHp3si1j0GwRVU=
 			</data>
 			<key>hash2</key>
 			<data>
-			7yR5zOUmtjzmyLeYSMA+beYrZdemwE572r110s6rkDE=
+			+dWWPFPzM/KFfD8BXocJ/pb0jvYzTbWXLhw5+0uC7u8=
 			</data>
 		</dict>
 		<key>FAQStoryboard.storyboardc/1ma-CO-VIh-view-LJp-VH-g9q.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ul/14pI37lEXfGebkPzeNC1CigM=
+			C2S+cN73d6rB8yOKQZMmTlXi1wQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			JmUZAM3J7Q+i43i1pzOeznKnwp0ESMAmpHYAvjo5D74=
+			ffdBuv/RJKWeUeDKOO3aVVgGjoLZetAyswfaIOZsBhQ=
 			</data>
 		</dict>
 		<key>FAQStoryboard.storyboardc/7h5-Zt-xjO-view-zET-7z-Mso.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3iBkvY4KVXYe48GOOMamz7iEQmI=
+			MoKuqTVAWh1j7NXXrNiLh4EOoQM=
 			</data>
 			<key>hash2</key>
 			<data>
-			epev3e+545F22PA9/P0reSAejt8dSEHmRIim0hy9Lr0=
+			aE4hW5gDx8Ct+Xz6Z+3S/dfUoeF8BN2/NnVGLjGEda4=
 			</data>
 		</dict>
 		<key>FAQStoryboard.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yJauQ2Ta3vc56Ja9R9x8mC97NGc=
+			QxwSV93LFxfoxQPLx0ythMu6BKw=
 			</data>
 			<key>hash2</key>
 			<data>
-			st9Hlh0N0vIQEI3q6y+WjebkiHySXsOJqqTRWwkx4UQ=
+			7lhr3sJDHCnNzWUlFKFXBXAtOh5skQ7QmWoPTpDpCGg=
 			</data>
 		</dict>
 		<key>FAQStoryboard.storyboardc/UCFAQCategoriesTableViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tpJldXoVWOP/p/xlsmZ+BvxZh9M=
+			IUvSDeJtimIImm9a+sFQWzZCNmo=
 			</data>
 			<key>hash2</key>
 			<data>
-			E4/DZzNvMfL4aWCHZ2E9IHfR74ZmK/SysxxVxgP+rJ8=
+			5FIBuZnKUC8JLXitin2dKtueDKmDe3EJlY/dtPTgPyc=
 			</data>
 		</dict>
 		<key>FAQStoryboard.storyboardc/UCFAQEntriesTableViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CX5W1/DzjK3A4deSNpZBIEutNRk=
+			0zDfVzMJNpN73zMzCQZ4bIMElqU=
 			</data>
 			<key>hash2</key>
 			<data>
-			AOwK0ikEs99UZeIu6MwpVIRBk1RV8s6YVQ6cVC576Qk=
+			eN6aiepIG78MKYf3Ah7Cb7NNl6Kol/XspmJQvTu4t3c=
 			</data>
 		</dict>
 		<key>FAQStoryboard.storyboardc/UCFAQEntryViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pWw17HPNkZcmtM+II0OwSqTiw2Q=
+			LBql8rWVz3bYheBC0aczPDMzq8s=
 			</data>
 			<key>hash2</key>
 			<data>
-			YzuMUZJaQIzmJh9NXf6gx2hWP58umi3K2AaZ1qwsYIk=
+			H33cJtOMpEzontsHFzIDapiR07J7pNjEX8RLYFtZJ2E=
 			</data>
 		</dict>
 		<key>FAQStoryboard.storyboardc/xhC-NO-OCI-view-ocM-rQ-zNM.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QRRds0sC5MhqtQPxIaxbgfOvb1I=
+			rpmqt2OiZPvcDf9UQDj03wslFR8=
 			</data>
 			<key>hash2</key>
 			<data>
-			EkK/rQBMYBEkx6i9cJqSmtVURoOXbOXss5cNkpUDASE=
+			8glkhgLeSI55DlNw0UPui7+EaPuwoYiWlwzwcHMmZIc=
 			</data>
 		</dict>
 		<key>Headers/UCActionEntity.h</key>
@@ -306,11 +326,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TZOH518JNj0S9NGcqZMna0GsiZY=
+			kW39hPaPPyY9BTgt4b96AnUo14I=
 			</data>
 			<key>hash2</key>
 			<data>
-			9Bu5ZY+fZD9Ztyahwyyq/cjEKTCOCDCF8D+ty0KHZ7E=
+			5T4EpEqh/5xvA+ft3zM6jhhS/IgSNP0TIkErA/6pHVQ=
 			</data>
 		</dict>
 		<key>Headers/UCCacheSettings.h</key>
@@ -324,26 +344,37 @@
 			UXV0LORwzwT0Sta+0KBZ47/r3f9ubjNVGaOsuR0gfFw=
 			</data>
 		</dict>
+		<key>Headers/UCCustomMessage.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			e2MQ5r/PDgCb7HaAsCEpDBinscU=
+			</data>
+			<key>hash2</key>
+			<data>
+			6C+MQq7H43Ppx15mAXjlzdX1yAIBiVMoIt9BIMF2tBo=
+			</data>
+		</dict>
 		<key>Headers/UCCustomizable.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9Ojvb9bLwRfX7hSuHLZkeRcY6PM=
+			Uv1mNxWaBQUIAOEH5eh2800nNLI=
 			</data>
 			<key>hash2</key>
 			<data>
-			pLWoceBO2kxSmS9rx1yBOCx9sF2jd9/eqG3tkA/7ICQ=
+			N5uGJM0BqXmVfmNFUKozlFXyiGfxHCb96nJu4uVyknA=
 			</data>
 		</dict>
 		<key>Headers/UCEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZfQpr0DuEMWcWVGDiGcstmiyfC8=
+			SAM+K9xbjkdnzTkYIKM0s3BPmJ8=
 			</data>
 			<key>hash2</key>
 			<data>
-			1aVVOAsHw5dO3B77+D7IJEECswV5Piq4gDpVeIJpnBE=
+			uLtmqPiMkVEFwArOz6q+7s/WyMDhfInU+V+VpRF6214=
 			</data>
 		</dict>
 		<key>Headers/UCEventLogger.h</key>
@@ -372,11 +403,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			egP64BBnLlVK17p9kZI8f/iOz6s=
+			jSjxR+V7+Q0eThYngnfHBzoqyzA=
 			</data>
 			<key>hash2</key>
 			<data>
-			O8zCUKuPW1IPsA92t0mtTR1E5SKZB6MmdqHIUPSfe8M=
+			Hts0sQwKynTnJaIDFfIgMceHcZJVgx2w99NPRA6jpIY=
+			</data>
+		</dict>
+		<key>Headers/UCHeaderStyle.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YKhQDG8U0U7ULxd2I77kkSrpkZs=
+			</data>
+			<key>hash2</key>
+			<data>
+			Lu8uKhhZ99K2ScerltrdCuoBjz1GWJlZCXQjkOjNKqU=
 			</data>
 		</dict>
 		<key>Headers/UCImageStyle.h</key>
@@ -416,22 +458,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zhf4lATDFB1Q52p3cHeilXiUaRQ=
+			ZulcTtYdRLVzTqG0yR/iXYgh3rc=
 			</data>
 			<key>hash2</key>
 			<data>
-			QkimN3kwx2tC+9C+vBGUwuoSjdsdQJChWEugRlSHDx8=
+			rpf1TzNWPvInzv49+evjyjfNkhxpQpGa0777mgrTlO0=
 			</data>
 		</dict>
 		<key>Headers/UCLocalizedStringsDataSource.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BPDTm+i1mfxPZHjms8KPlMTKwhU=
+			1Z3yf6C5bnbA5K2cRg14hQ+S/as=
 			</data>
 			<key>hash2</key>
 			<data>
-			uPnT9Xly08h7yof+Gfy9O3sdEX+Sr3JYeWpe4HgZfnQ=
+			prtlAmp95q1IdpZb/5bzZN2q/TZ/+2wlmeJi3GOyPLY=
 			</data>
 		</dict>
 		<key>Headers/UCLoggerSettings.h</key>
@@ -449,22 +491,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EJdqBgbMRnj9qd9TNixMuO17/go=
+			ffoBHSwt4RsC8HeZIM2hJcwj0lw=
 			</data>
 			<key>hash2</key>
 			<data>
-			8N9+VCge4z9iokrtgV9eaK2b3jFlkIloVUeog6ljf0o=
+			bdEc9i5lfZhLv8RJ/wKdX1RGNSOdfh/Nk7Twx/m+g+s=
+			</data>
+		</dict>
+		<key>Headers/UCMessage.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rBS/nU19s/enUfmdh0x2OQg793E=
+			</data>
+			<key>hash2</key>
+			<data>
+			hBbjYRp8nufqKxRHCgGD5KuDWcCNKHQwY7K24jIcu64=
+			</data>
+		</dict>
+		<key>Headers/UCMessageData.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			otgq/D8N4W6W/B90kHcNk2WXLcg=
+			</data>
+			<key>hash2</key>
+			<data>
+			f6WyZVdaTB2nw9FD7pG+WPCtC21zkRWSzFlcQMEoy1E=
+			</data>
+		</dict>
+		<key>Headers/UCMessageMediaData.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			C+/IKC01QF1Gx4cMJHU1p4OLTN8=
+			</data>
+			<key>hash2</key>
+			<data>
+			M7HgunY1lJJ11jrkkM2iZPvcCytHEp7oTLScGV4pbaM=
 			</data>
 		</dict>
 		<key>Headers/UCSettings.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+57ac/3mw+ZWhHtGvzEVKHJnVlY=
+			n++9APdYoGnzDa59XlpTZqgidtc=
 			</data>
 			<key>hash2</key>
 			<data>
-			YQ6DMI0ljnMrYJ7kUPq/rITePUyRF8BkSH4VRdj/c5E=
+			tT+aCX1JU91hZBNFfXz63no/ND9cWEt5xYsipez2yIQ=
 			</data>
 		</dict>
 		<key>Headers/UCTextStyle.h</key>
@@ -482,11 +557,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+nd7y2aekb7x9c6keLAngpN5xLs=
+			q5g7v/xlGlL2P5EB7eBZcXx0Vw0=
 			</data>
 			<key>hash2</key>
 			<data>
-			LK0wNfguO23KJfeMynkr5qr9IA8qNNhXxcJITfsWmOc=
+			a+XY0Hnr+L15v3iAFpBzEgGppJMMtvdQY3BWviat6bA=
 			</data>
 		</dict>
 		<key>Headers/UCUtils.h</key>
@@ -504,11 +579,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8CtYFrn6H0PapRpWG4Yuk+MJwKw=
+			vITjaEVl5OiBFvxIo0SM94MtxOE=
 			</data>
 			<key>hash2</key>
 			<data>
-			wslmVXTGswh0G81SHNRSfBhIuW9XjkSIqvsYabkNfaY=
+			21Fbq2hDACIPHOFcEj7dUJIyaWTM+CEh536rN/cueUk=
 			</data>
 		</dict>
 		<key>LiveChatStoryboard.storyboardc/Info.plist</key>
@@ -526,66 +601,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8BXadQo6/rNbLQbP8ykqkSfrrOg=
+			Pxhcs/abfyBPN1+v+zpOKRE6pY4=
 			</data>
 			<key>hash2</key>
 			<data>
-			FOJOnsVkTda4w8LBDDIuM2g02vCrooHmz2o5tPunt2o=
+			TNzEo0nwxlKbhzrO7ztvTSnDaeTncH+H9HHg3PcoWZw=
 			</data>
 		</dict>
 		<key>LiveChatStoryboard.storyboardc/UIViewController-l02-rj-Qgi.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ExgvqRQ1HuZCmc3xBy4EAUeWM54=
+			A28qlEWawVibt24fk6eJwRGEGLs=
 			</data>
 			<key>hash2</key>
 			<data>
-			kp/zLskZfNM+V0Yb2gdR70XKiiCO0FlRyqHzpn/EIGo=
+			4DJYm49Hy2ezKoxWXwnVeqLX1AQe3wW4qaYF2MWPSeU=
 			</data>
 		</dict>
 		<key>LiveChatStoryboard.storyboardc/UIViewController-pgr-hw-IX6.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZELS4HY5UByGhCY70qcaY2xAtmk=
+			Y2HjhDWBY15pkUu+j7wrRj2fObM=
 			</data>
 			<key>hash2</key>
 			<data>
-			UtjHFL8uJQMSvYGyszOXSS4cZnHkEAI/o10hTl5qlzA=
+			7rh/M7FB3KLHsvcDp4nqSMkXa83+j16KppCIrbu4tYI=
 			</data>
 		</dict>
 		<key>LiveChatStoryboard.storyboardc/Upo-5b-aS9-view-6Jd-ld-jKM.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+Rr2Lury3dwPYA/u/TfqHbhS7xE=
+			yZvet2JnZs9pKbvvE4scyHllRiQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			Bi+a2Dks79FI073BykLRZ0jBwPx9aSl+PJzqLlmijrY=
+			JKLoeFRsUpQ0Wu6T/UyM4W7YxujGUaCunFFo4z6Z1YA=
 			</data>
 		</dict>
 		<key>LiveChatStoryboard.storyboardc/l02-rj-Qgi-view-aUp-td-Rdt.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			l0Y6vW2M+WEEnClERY/XhGL5Nd4=
+			jJ10Gz+pTPc4/TaVpSh3MMggwUM=
 			</data>
 			<key>hash2</key>
 			<data>
-			dDTlfJSgSiQvwqinghqYHXbUpyZP/E7OIaHSmPqthIk=
+			y3XJR7aIiJdppRf7tn3dY1yQS22KmaVFo2ypuJ7IZoU=
 			</data>
 		</dict>
 		<key>LiveChatStoryboard.storyboardc/pgr-hw-IX6-view-jaN-MD-4yE.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NkEe4KHz4Lrp2+r+hEuZtakrb9o=
+			CNz+rkxxDifO3QdIR653K5q0RyI=
 			</data>
 			<key>hash2</key>
 			<data>
-			u0b2tkLq00TGrNyoFYRyvqZtAPnRxsGduOdMLBZlaRY=
+			Ru/4forFGy5GUORCPDfU+Hov/EjIE/DhrUWB+xD2llo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -614,121 +689,121 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			F0qPKTma2HAPLmDRAYGv3o/sfZ4=
+			YoIe4BWgdg80Bb5QP7Uln2I03FI=
 			</data>
 			<key>hash2</key>
 			<data>
-			ElrJ74+c+xJ7Zqy3lBhlMxH21YWAlTAnZGHsGgj4CjA=
+			aD6fqWJsxMUT0uORLOYInR1592X+X0vIsxmXS+GRT8Q=
 			</data>
 		</dict>
 		<key>MyTicketsStoryboard.storyboardc/UIViewController-Jgb-8x-7jA.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			W+JgD2Scx8vGfc6IUvi0YejTD3A=
+			PntmWiFk1WvOUzxJCD6Vq8ebCsw=
 			</data>
 			<key>hash2</key>
 			<data>
-			sI3cQbjdJNuPrY6UHHBd3Ffx/E1jpBq/yL64GNyGfOc=
+			63yx8k8xvFPCgqkBAGWv1DuwJewAza0xOpe6SAv8CUY=
 			</data>
 		</dict>
 		<key>MyTicketsStoryboard.storyboardc/UIViewController-wbE-ap-gu0.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wt3Bd4Q3Fc/4mFOpW/a8o4UaaFY=
+			eJR9KVE8cEeMs7O2vEGlw+9/xL4=
 			</data>
 			<key>hash2</key>
 			<data>
-			e4IOr4u39PiTPKoz+LiGIOFOLNjqLPPlxgzuI3AwPRo=
+			h9ZVOsGblsa3ZsVSg/L8I4brSHMU9dMolgTQ0QX0Oxo=
 			</data>
 		</dict>
 		<key>MyTicketsStoryboard.storyboardc/wbE-ap-gu0-view-oBw-sb-hPy.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+LntuazAgjVjej26SOK6ij3yn9w=
+			ngb0LsNs9+CGxT0knnUoWiD+UHg=
 			</data>
 			<key>hash2</key>
 			<data>
-			/kKO9AgDanrFCP/Jb9Y3oY4VU4aUxh5S4oBJpVJpRMo=
+			KfLRhhtDaI+GAvRM80eHMIgbT9y24nCyPTRuvVDyyLM=
 			</data>
 		</dict>
 		<key>UCMessagesCollectionViewCellIncoming.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xDlk5lcnliLJUQOKY1r0H33oznY=
+			JcZEUGOfiTAS3wyK6UcqAjHwg1c=
 			</data>
 			<key>hash2</key>
 			<data>
-			G5sKqbPJWMtTXR7/g1KeMs3hRoXm/h6WTXlBVVqFxrg=
+			IPHy1QLswcUU6rg3q1UavC8J+XvCjWPX3LboDw4z4JM=
 			</data>
 		</dict>
 		<key>UCMessagesCollectionViewCellOutgoing.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			71Uk+XOb4rzuLuxLEK3uLzqTIdI=
+			BJ+t0LEZnoS+32C4SoRqeL3Cfuk=
 			</data>
 			<key>hash2</key>
 			<data>
-			CM3sklkXQ1WxfhLky0d1sYzVbnMFIO9nmiIFeMdARso=
+			H3omJjar2WoNTuokdm0zd3FMrHvTeHOiQCkg6gQ7GCs=
 			</data>
 		</dict>
 		<key>UCMessagesLoadEarlierHeaderView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PXqUKLO5hSElMLN/CLc2mzD9Iqk=
+			1h8NMRZ0dQLi91LR5RNlr07dQxM=
 			</data>
 			<key>hash2</key>
 			<data>
-			5XUokNlXF2i31jP75lv/+HkLCJPv85Ojc8GLl31PG38=
+			s7v9GF0yIZ+CixWiGQQ23bmOFklY6Z8va35cVH/o3Zs=
 			</data>
 		</dict>
 		<key>UCMessagesToolbarContentView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9SUqbLXnCUKO0p4YTKctxS4AumM=
+			NJvp8zRm7zCJ4vlEhePYABZoxHU=
 			</data>
 			<key>hash2</key>
 			<data>
-			HeV7tUFsRmvmdXL4k6cHDu0y+cyHwKFVF3liKenH1aU=
+			nkWqwnapKAkhL1NuRiYNt1cqiP6U59cbunEeDh2I3UI=
 			</data>
 		</dict>
 		<key>UCMessagesTypingIndicatorFooterView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MotoiqFFnGBBsbc8zui3NrK1kEY=
+			HemJkjE7DMKOyqc0vcbDmKHh1mU=
 			</data>
 			<key>hash2</key>
 			<data>
-			GvWvUS+X7PG4h3MLked0SwIdXFadh3jcZnA7CQIDXdo=
+			HgZB+F62N5Tl2yUjvoOu82cVUDlUKpaZTxsy44zQZBg=
 			</data>
 		</dict>
 		<key>UCNegativeFeedbackView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			anYB+Oy0QqIsiPnnUuzrFTYrqe4=
+			itXUNxDYij/ql0eMVEh6um0N5W8=
 			</data>
 			<key>hash2</key>
 			<data>
-			K5OrYFxiOXZ0qXSOrzm4LUCva3by1w0X3dcUtEEPzOo=
+			SyUFpJFf2TBQ4LvX4blVdMnUHNVMBSaAFMM7kD0AM84=
 			</data>
 		</dict>
 		<key>UCPositiveFeedbackView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TtvvB5pyUOpLmbt885KJPKvwEtI=
+			3qZ5Wm0W/G2aaaTcIQ4RTFE60BE=
 			</data>
 			<key>hash2</key>
 			<data>
-			iUTl+cWKkcbwnihM3n1eSAoOcQ8NjaWrIhPGDDIl3qo=
+			EMIMVGTrWEhQu//iYzGivjCgB4emDoM3t8Mphs3MwEg=
 			</data>
 		</dict>
 	</dict>

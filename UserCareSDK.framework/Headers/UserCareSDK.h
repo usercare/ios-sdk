@@ -24,3 +24,5 @@ FOUNDATION_EXPORT const unsigned char UserCareSDKVersionString[];
 #import <UserCareSDK/UCCacheSettings.h>
 #import <UserCareSDK/UCLoggerSettings.h>
 #import <UserCareSDK/UCLiveChatClient.h>
+#import <UserCareSDK/UCHeaderStyle.h>
+#import <UserCareSDK/UCCustomMessage.h>
