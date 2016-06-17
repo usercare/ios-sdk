@@ -278,13 +278,14 @@ Receives entry point for chat interface.
 #pragma mark - Device ID
 
 /**
- Set device identifier that developer would like to use (such as IDFA or calculated) instead of default one (IDFV)
+ Set device identifier that developer would like to use (such as IDFA or calculated) instead of default one (IDFV).
+ Max length should not exceed 42 chars. 
  @param customDeviceId - custom identifier or nil to use default IDFV
  */
 + (void)setDeviceId: (NSString *)customDeviceId;
 
 /**
- * Returns device identifier. Default value is identifier for vendor (IDFV), can be set custom identifier via UCDeviceDataManager::setDeviceIdentifier
+ * Returns device identifier. Default value is identifier for vendor (IDFV), can be set custom identifier via UCManager::setDeviceId
  @return IDFV or custom device identifier
  */
 + (NSString *)deviceId;
