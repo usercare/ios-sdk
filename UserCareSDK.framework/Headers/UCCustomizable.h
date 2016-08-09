@@ -9,14 +9,14 @@
 
 /**
  @brief Used for acheiving UCStyle object from dictionary.
- @param Dictionary A dictionary, parsed from JSON object.
+ @param dictionary - A dictionary, parsed from JSON object.
  @return Instance of a UCStyle object.
  */
 + (id<UCStyle>)styleWithDictionary:(NSDictionary *)dictionary;
 
 /**
  @brief Used for acheiving UCStyle object from dictionary.
- @param Dictionary A dictionary, parsed from JSON object.
+ @param dictionary - A dictionary, parsed from JSON object.
  @return Instance of a UCStyle object.
  */
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
@@ -31,7 +31,7 @@
 
 /**
  @brief Called for updating UI elements with style.
- @param style abstract item must confirm <UCStyle> protocol
+ @param style - abstract item must confirm <UCStyle> protocol
  */
 - (void)updateWithStyle:(id<UCStyle>)style;
 

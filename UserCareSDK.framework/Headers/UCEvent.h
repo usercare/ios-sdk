@@ -54,6 +54,11 @@ extern NSString *const kUCEventCrash;
 @property (nonatomic, strong) NSDictionary *customParameters;
 
 /**
+ @brief Custom parameters for any event. Should be NSDictionary.
+ */
+@property (nonatomic, strong) NSDictionary *customEventData;
+
+/**
  @brief Session start identifier. Used for session tracking events. Should be NSString.
  */
 @property (nonatomic, copy) NSString *sessionStartId;
@@ -84,5 +89,10 @@ extern NSString *const kUCEventCrash;
  @return dictionary representation of UCEvent.
  */
 - (NSDictionary *)dictionaryRepresentation;
+
+/**
+ @return flag that allows event to be sent to server
+ */
+- (BOOL)readyToSync;
 
 @end

@@ -52,5 +52,10 @@
 @property (nonatomic, strong) NSString *ticketsMessagesWaitingText;
 
 @property (nonatomic, strong) NSString *noNetworkAlertText;
+@property (nonatomic, strong) NSString *connectionError;
+
+@property (nonatomic, strong) NSString *dialogRetry;
+@property (nonatomic, strong) NSString *dialogCancel;
+@property (nonatomic, strong) NSString *dialogDismiss;
 
 @end

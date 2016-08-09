@@ -7,6 +7,7 @@ FOUNDATION_EXPORT double UserCareSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char UserCareSDKVersionString[];
 
 #import <UserCareSDK/UCManager.h>
+#import <UserCareSDK/UCPush.h>
 #import <UserCareSDK/UCEventLogger.h>
 #import <UserCareSDK/UCActionEntity.h>
 #import <UserCareSDK/UCSettings.h>

@@ -22,9 +22,9 @@
 /**
     Logs custom event to server.
     @param eventType - user-defined type of event. Should be NSString no longer than 63 characters, alphanumeric with hyphens allowed.
-    @param parameters - dictionary of additional parameters
+    @param userData - dictionary of additional parameters
  */
-- (void)sendEvent:(NSString *)eventType withCustomParameters:(NSDictionary *)parameters;
+- (void)sendEvent:(NSString *)eventType withUserData:(NSDictionary *)userData;
 
 /**
  Logs custom event to server.
@@ -43,5 +43,16 @@
  @param faqEntry - current faq. Should be UCFAQEntry instance.
  */
 - (void)sendFaqReadEvent:(UCFAQEntry *)faqEntry;
+
+/**
+ Logs event when action invoked.
+ @param title - action title.
+ */
+- (void)sendActionInvokedEvent:(NSString *)title;
+
+/**
+ @param crashReport - CLSReport report provided by crashlytics
+ */
+- (void)sendCrashlyticsCrashEvent:(id)crashReport;
 
 @end

@@ -1,6 +1,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#import "UCPush.h"
+
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wnullability-completeness"
 
@@ -27,7 +29,8 @@ typedef void(^UCInitializeFailedBlock)(NSError *error);
 typedef void(^UCMyTicketsUpdatedBlock)(NSArray *myTickets);
 
 /**
- UserCare Manager delegate.
+ UserCare Manager delegate. 
+ Every callback method will be executed at main queue.
  */
 @protocol UCDelegate <NSObject>
 
@@ -112,6 +115,8 @@ typedef void(^UCMyTicketsUpdatedBlock)(NSArray *myTickets);
  Optional property. Will be used for logging customizing.
  */
 @property (nonatomic, strong) UCLoggerSettings *loggerSettings;
+
++ (instancetype)settingsWithAppId:(NSString *)appId andEventsApiKey:(NSString *)eventsKey;
 
 @end
 
@@ -201,7 +206,18 @@ typedef void(^UCMyTicketsUpdatedBlock)(NSArray *myTickets);
  */
 - (void)openURL:(NSString *)url;
 
-/** 
+/**
+ @brief Initialize UC SDK.
+ @param settings - your Manager Settings. Create them and customize.
+ */
+- (void)initWithSettings:(UCManagerSettings *)settings;
+
+/**
+ @return pointer to instance of UC
+ */
++ (UCManager *)sharedInstance;
+
+/**
     @brief Starts service. Immediately triggers settings and update requests to server
     @param settings - your Manager Settings. Create them and customize.
     @param completionBlock - completion block called after successful init.
@@ -210,6 +226,9 @@ typedef void(^UCMyTicketsUpdatedBlock)(NSArray *myTickets);
 
  */
 + (UCManager *)startServiceWithSettings:(UCManagerSettings *)settings completion:(UCInitializeSuccessfulBlock)completionBlock failure:(UCInitializeFailedBlock)failureBlock;
+
++ (void)startServiceWithCompletion:(UCInitializeSuccessfulBlock)completionBlock
+                           failure:(UCInitializeFailedBlock)failureBlock;
 
 
 /**
@@ -255,13 +274,6 @@ Creates live chat button. Can be called anytime, returns invisible button if liv
 - (UIButton *)createMyTicketsButton;
 
 /**
-Notifies SDK that chat push notification was received
-    @param userInfo - data dictionary from application: didReceiveRemoteNotification:
-
-*/
-- (void)receivedPushNotification:(NSDictionary *)userInfo;
-
-/**
 
 Receives entry point for chat interface.
 
@@ -274,6 +286,10 @@ Receives entry point for chat interface.
  Clears cache for all SDK requests and responses
  */
 + (void)clearCache;
+
+#pragma mark - UCPush
+
++ (UCPush *)push;
 
 #pragma mark - Device ID
 
