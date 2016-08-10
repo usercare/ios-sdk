@@ -6,3 +6,7 @@ Cocoapods spec file to make it easy to integrate the UserCare SDK into your iOS 
 
 Note that to function correctly the UserCare SDK requires a signup and may require a
 subscription. You can sign up for a free trial at: https://www.usercare.com.
+
+# Documentation
+### 1. [Integration guide](Docs/integrate.md)
+### 2. [Crashlytics support (Fabric.io)](Docs/crashlytics.md)
