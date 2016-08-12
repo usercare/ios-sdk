@@ -49,3 +49,5 @@ You should see the `UserCareSDK` appear in the project outline:
 You should see the `UserCareSDK` listed under `Embed Frameworks` in the project `Build Phases`:
 
 ![Company name](images/integrate_manual_img_4.png)
+
+Once you finished with setup, you will need to [initialize SDK](initialize.md).

@@ -42,6 +42,4 @@ And put into ingration settings:
 
 or
 
-![Application settings](images/crashlytics_img_3.png) 
-
-## Reports
+![Application settings](images/crashlytics_img_3.png)
