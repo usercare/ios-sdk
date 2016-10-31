@@ -1,7 +1,6 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
-extern NSString *const kUCEventSession;
 extern NSString *const kUCEventSessionEnd;
 extern NSString *const kUCEventPurchaseSuccess;
 extern NSString *const kUCEventPurchaseFailed;
@@ -64,14 +63,19 @@ extern NSString *const kUCEventCrash;
 @property (nonatomic, copy) NSString *sessionStartId;
 
 /**
- @brief Crashlitics exception ID. Used if crashlitics is integrated into project.
+ @brief Crashlytics exception ID. Used if crashlytics is integrated into project.
  */
 @property (nonatomic, copy) NSString *crashlyticsKey;
 
 /**
- @brief Stack trace of handeled crash. Used for logging instead of crashlitics.
+ @brief Stack trace of handeled crash. Used for logging instead of crashlytics.
  */
 @property (nonatomic, copy) NSString *stacktrace;
+
+/**
+ @breif Event timestamp
+ */
+@property (nonatomic, copy) NSString *timestamp;
 
 /**
  @return instance of UCEvent with type.
@@ -89,6 +93,11 @@ extern NSString *const kUCEventCrash;
  @return dictionary representation of UCEvent.
  */
 - (NSDictionary *)dictionaryRepresentation;
+
+/**
+ @return dictionary representation of UCEvent with internal fields.
+ */
+- (NSDictionary *)persistentDictionaryRepresentation;
 
 /**
  @return flag that allows event to be sent to server

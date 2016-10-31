@@ -18,6 +18,8 @@ extern NSString * const kUCBackgroundImageNoRepeatFill;
 extern NSString * const kUCBackgroundImageNoRepeatCenter;
 extern NSString * const kUCBackgroundImageNoRepeatCrop;
 
+extern NSUInteger const kUCSessionDefaultInterval;
+
 /**
  * Contains UI settings, parsed from server responce. Initiates with initWithStatusDictionary:.
  */

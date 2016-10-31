@@ -71,11 +71,6 @@ typedef void(^UCMyTicketsUpdatedBlock)(NSArray *myTickets);
  */
 @interface UCManagerSettings : NSObject
 
-/**
- Push notifications token received on device registration.
- */
-@property (nonatomic, strong) NSData *pushNotificationToken;
-
 /** 
  Application identifier received from UserCare.
  */
@@ -116,6 +111,29 @@ typedef void(^UCMyTicketsUpdatedBlock)(NSArray *myTickets);
  */
 @property (nonatomic, strong) UCLoggerSettings *loggerSettings;
 
+/**
+ @brief Create UCManagerSettings instance with Application ID and Events API key taken from Info.plist file.  
+ 
+ Example: Add this code at the end of Info.plist file (open as source code), before `</dict></plist>` nodes and replace [YOUR_APP_ID] and [YOUR_EVENTS_API_KEY] with correct values.
+    
+    <key>Agent.ai</key>
+    <dict>
+        <key>ApplicationID</key>
+        <string>[YOUR_APP_ID]</string>
+        <key>EventsAPIKey</key>
+        <string>[YOUR_EVENTS_API_KEY]</string>
+    </dict>
+ 
+ @return UCManagerSettings or nil if there was unable to fetch config from Info.plist
+ */
++ (_Nullable instancetype)settings;
+
+/**
+ @brief Custom settings for SDK initialization with specific Application ID and Events API key
+ @param appId - Application ID
+ @param eventsKey - Events API key
+ @return UCManagerSettings
+ */
 + (instancetype)settingsWithAppId:(NSString *)appId andEventsApiKey:(NSString *)eventsKey;
 
 @end
@@ -175,6 +193,13 @@ typedef void(^UCMyTicketsUpdatedBlock)(NSArray *myTickets);
     @param parent - Your ViewController that will be used as parent to present SDK navigation stack.
  */
 - (void)presentLiveChatWithParent:(UIViewController *)parent;
+
+/**
+ @brief Shows  SDK contact us screen if possible. Property isLiveChatEnabled indicates whether this function is available.
+ @param params - Specific params related to LiveChat (for example message to be sent to Agent, once chat initiated)
+ @param parent - Your ViewController that will be used as parent to present SDK navigation stack.
+ */
+- (void)presentLiveChatWithParams:(NSDictionary *_Nullable)params andParent:(UIViewController *)parent;
 
 /**
     Shows  SDK FAQ if possible. Property isFAQEnabled indicates whether this function is available.

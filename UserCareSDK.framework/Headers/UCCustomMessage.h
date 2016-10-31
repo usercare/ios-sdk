@@ -46,6 +46,11 @@ typedef NS_ENUM(NSUInteger, UCMessageType) {
 @property (nonatomic, assign) BOOL isGreetingMessage;
 
 /**
+ Property defines whether the message was read or not.
+ */
+@property (nonatomic, assign) BOOL isRead;
+
+/**
  @brief Mhetod is used for creating instance of the message from parsed dictionary.
  @param dictionary Parsed dictionary from JSON object.
  @return instance of a custom message.

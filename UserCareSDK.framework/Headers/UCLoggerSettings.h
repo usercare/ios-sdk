@@ -6,9 +6,9 @@
 @interface UCLoggerSettings : NSObject
 
 /**
- Crashlitics Key will be used in crash logs.
+ Crashlytics Key will be used in crash logs.
  */
-@property (nonatomic, readonly) NSString * _Nullable crashliticsKey;
+@property (nonatomic, readonly) NSString * _Nullable crashlyticsKey;
 
 /**
  Defines wheter SDK will send logs.

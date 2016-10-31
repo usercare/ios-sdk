@@ -18,6 +18,12 @@
 - (void)sendMessage:(UCCustomMessage *)message;
 
 /**
+ * Send notification to specific server, that the messages were read 
+ * @param messages - incoming messages thad should be marked as read
+ */
+- (void)markMessagesAsRead: (NSArray *) messages;
+
+/**
  * Initialises connection using SocketIO with parameters specified in shared instance of UCNetworkManager
  */
 - (void)connect;
@@ -41,15 +47,32 @@
 @protocol UCLiveChatDelegate <NSObject>
 
 /**
- Method called when new messages comes.
+ @brief Method called when live chat conected to socket.
+ @param client - UCLiveChatClient instance.
+ */
+- (void)connectedToLiveChat:(UCLiveChatClient *)client;
+
+/**
+ @brief Method called when live chat disconnected from socket.
+ @param client - UCLiveChatClient instance.
+*/
+- (void)disconnectedFromLiveChat:(UCLiveChatClient *)client;
+
+/**
+ @brief Method called when new messages comes.
  @param messages - Messages array
  */
 - (void)receiveMessages:(NSArray *)messages;
 
 /**
- Method called when history comes.
+ @brief Method called when history comes.
  @param messages - History messages array
  */
 - (void)receiveHistory:(NSArray *)messages;
+
+/*
+ @brief Method called when live chat ready for a new conversation.
+ */
+- (void)readyForNewConversation;
 
 @end

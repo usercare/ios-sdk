@@ -21,14 +21,14 @@
 
 /**
     Logs custom event to server.
-    @param eventType - user-defined type of event. Should be NSString no longer than 63 characters, alphanumeric with hyphens allowed.
+    @param eventType - user-defined type of event. Should be NSString no longer than 63 characters, alphanumeric with undercores allowed.
     @param userData - dictionary of additional parameters
  */
 - (void)sendEvent:(NSString *)eventType withUserData:(NSDictionary *)userData;
 
 /**
  Logs custom event to server.
- @param eventType - user-defined type of event. Should be NSString no longer than 63 characters, alphanumeric with hyphens allowed.
+ @param eventType - user-defined type of event. Should be NSString no longer than 63 characters, alphanumeric with undercores allowed.
  */
 - (void)sendEvent:(NSString *)eventType;
 
@@ -54,5 +54,12 @@
  @param crashReport - CLSReport report provided by crashlytics
  */
 - (void)sendCrashlyticsCrashEvent:(id)crashReport;
+
+/**
+ Extends session timeout. Executed each time when network operation was pefomed by UC SDK.
+ Session timeout controlled by settings property: [UCManager sharedInstance].settings.sessionContinuationInterval
+ */
+- (void)extendSession;
+
 
 @end
