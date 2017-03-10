@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "UserCareSDK"
-  s.version          = "1.0.11”
+  s.version          = "1.0.11"
   s.summary          = "Official iOS client library for UserCare"
   s.description      = <<-DESC
   This is an Official iOS client library for UserCare. Seamless in-app customer service software that grows customer lifetime value.
