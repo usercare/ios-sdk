@@ -35,10 +35,12 @@ typedef void(^UCMyTicketsUpdatedBlock)(NSArray *myTickets);
 @protocol UCDelegate <NSObject>
 
 /**
- Method called when any action occured.
- @param actionEntity - action entity received in message
+ Method called when any action received.
+ @param action - action received in push notification.
+ @param error - pointer to error, defined by user. Example: `*error = [NSError errorWithDomain:[NSString stringWithFormat: @"User defined error for callback: %@", action.callbackName] code:1 userInfo:nil];`
+ @return YES - if action callback was handled. Please use AiPushInAppAction's property callbackName for identification.
  */
-- (void)onActionMessageReceived:(UCActionEntity *)actionEntity;
+- (BOOL)handleAction:(AiPushInAppAction *)action executionError:(NSError **)error;
 
 /**
  Method called when system message received.
@@ -63,6 +65,13 @@ typedef void(^UCMyTicketsUpdatedBlock)(NSArray *myTickets);
  @param statusCode - status code
  */
 - (void)usercareSdkFailedWithError:(NSError *)error withStatusCode:(NSInteger)statusCode;
+
+@optional
+/**
+ Method called when any action occured.
+ @param actionEntity - action entity received in message
+ */
+- (void)onActionMessageReceived:(UCActionEntity *)actionEntity __attribute__ ((deprecated("Will not be executed anymore and removed in next version. Use handleAction:executionError: instead.")));
 
 @end
 
@@ -307,13 +316,36 @@ Receives entry point for chat interface.
 */
 - (UCLiveChatClient *)getChatClient;
 
+#pragma mark - Tags
+
 /**
- Clears cache for all SDK requests and responses
+ @brief Identify user to specific queue by tag
+ @param tag - String tag name
+ */
++ (void)setTag:(NSString*)tag;
+
+/**
+ @brief Identify user to specific queue by tags
+ @param tags - NSArray of NSString tags
+ */
++ (void)setTags:(NSArray*)tags;
+
+/**
+ @return array of tags applied to user or nil
+ */
++ (NSArray*)getTags;
+
+/**
+ @brief Clears cache for all SDK requests and responses
  */
 + (void)clearCache;
 
 #pragma mark - UCPush
 
+/**
+ @brief Push notifications manager
+ @return insance of UCPush
+ */
 + (UCPush *)push;
 
 #pragma mark - Device ID

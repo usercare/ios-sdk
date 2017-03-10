@@ -14,11 +14,4 @@
 @property (nonatomic, strong) UCTextStyle *textStyle;
 @property (nonatomic, strong) UIColor *backgroundColor;
 
-/**
- @brief Return font that have applied values style to default one.
- @param defaultFont - Original font
- @return Styled font
- */
-- (UIFont *) styledFont: (UIFont *) defaultFont;
-
 @end

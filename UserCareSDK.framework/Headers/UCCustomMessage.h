@@ -1,28 +1,53 @@
-#import "UCMessage.h"
 
-extern NSString * const kUCSenderIdSelf;
-extern NSString * const kUCFAQLinkCaption;
+#import <UIKit/UIKit.h>
+#import "UCMessage.h"
+#import "AiMessageBody.h"
+#import "AiQuickResponseMessage.h"
+
+extern NSString *const kAIRoleCustomer;
+extern NSString *const kAIRoleAgent;
+extern NSString *const kAIRoleSystem;
+
+extern NSString * const kAIMessageTypeQR;
+extern NSString * const kAIMessageTypeImage;
+extern NSString * const kAIMessageTypeText;
 
 /**
  UCMessageType. Represents the different types of a message.
  */
 typedef NS_ENUM(NSUInteger, UCMessageType) {
     /**
-     UCMessageTypeSystem Messages received on state change i.e. the user has open live chat.
+     AIMessageTypeSystem Messages received on state change i.e. the user has open live chat.
      */
-    UCMessageTypeSystem = 0,
+    AIMessageTypeSystem = 0,
     /**
-     UCMessageTypeRegular User or agent chat message.
+     AIMessageTypeRegular User or agent chat message.
      */
-    UCMessageTypeRegular,
+    AIMessageTypeRegular,
     /**
-     UCMessageTypeFAQLink Message cotain link what could be opened.
+     AIMessageTypeFAQLink Message cotain link what could be opened.
      */
-    UCMessageTypeFAQLink,
+    AIMessageTypeFAQLink,
     /**
-     UCMessageTypeAction Message when the User receive a bonuce.
+     AIMessageTypeAction Message when the User receive a bonuce.
      */
-    UCMessageTypeAction,
+    AIMessageTypeAction __attribute__((deprecated)),
+    /**
+     AIMessageTypeImage image message.
+     */
+    AIMessageTypeImage,
+    /**
+     AIMessageTypeQuickResponse quick response message.
+     */
+    AIMessageTypeQuickResponse,
+    /**
+     AIMessageTypeQuickReply user's reply to quick response.
+     */
+    AIMessageTypeQuickReply,
+    /**
+     AIMessageTypeText text message.
+     */
+    AIMessageTypeText
 };
 
 /**
@@ -40,6 +65,20 @@ typedef NS_ENUM(NSUInteger, UCMessageType) {
  */
 @property (nonatomic, copy) NSString *imageURL;
 
+@property (nonatomic, copy) UIImage *localPreview;
+
+@property (nonatomic, assign) BOOL pending;
+
+/**
+ ID of the uploaded file to CDN.
+ */
+@property (nonatomic, copy) NSString *fileID;
+
+/**
+ QuickResponse data
+ */
+@property (nonatomic, strong) AiMessageBody *body;
+
 /**
  Property defines whether the message is Greeting i.e. should be displayed centred on the top.
  */
@@ -50,11 +89,18 @@ typedef NS_ENUM(NSUInteger, UCMessageType) {
  */
 @property (nonatomic, assign) BOOL isRead;
 
+@property (nonatomic, strong) AiQuickReply *quickReply;
+
 /**
  @brief Mhetod is used for creating instance of the message from parsed dictionary.
  @param dictionary Parsed dictionary from JSON object.
  @return instance of a custom message.
  */
 + (UCCustomMessage *)messageWithDictionary:(NSDictionary *)dictionary;
+
+/**
+ @return NSDictionary representation of message.
+ */
+- (NSDictionary *)asDictionary;
 
 @end

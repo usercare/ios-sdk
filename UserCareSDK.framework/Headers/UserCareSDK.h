@@ -27,3 +27,5 @@ FOUNDATION_EXPORT const unsigned char UserCareSDKVersionString[];
 #import <UserCareSDK/UCLiveChatClient.h>
 #import <UserCareSDK/UCHeaderStyle.h>
 #import <UserCareSDK/UCCustomMessage.h>
+#import <UserCareSDK/AiQuickResponseMessage.h>
+#import <UserCareSDK/AiQuickResponseStyle.h>

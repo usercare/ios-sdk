@@ -1,6 +1,7 @@
 #import <Foundation/Foundation.h>
 
 @class UCCustomMessage;
+@class UCLiveChatClient;
 @protocol UCLiveChatDelegate;
 
 /**
@@ -9,11 +10,16 @@
 @interface UCLiveChatClient : NSObject
 
 /**
+ * UCLiveChatDelegate delegate
+ */
+@property (nonatomic, weak) id<UCLiveChatDelegate> delegate;
+
+/**
  * Send new message to specified server.
  * You are able to use this function if only You are connected to the server.
  * Use connect function first.
  *
- * @param message A message to send.
+ * @param message - A message to send.
  */
 - (void)sendMessage:(UCCustomMessage *)message;
 
@@ -21,23 +27,23 @@
  * Send notification to specific server, that the messages were read 
  * @param messages - incoming messages thad should be marked as read
  */
-- (void)markMessagesAsRead: (NSArray *) messages;
+- (void)markMessagesAsRead:(NSArray *)messages;
 
 /**
- * Initialises connection using SocketIO with parameters specified in shared instance of UCNetworkManager
+ * @brief Cancel message delivery, initiated by user (for example file upload).
+ * @param message - message to be cancelled.
+ */
+- (void)cancelMessage:(UCCustomMessage *)message;
+
+/**
+ @brief Initialize connection. 
  */
 - (void)connect;
 
 /**
- Closes the connection.
+ @brief Closes the connection.
  */
 - (void)disconnect;
-
-
-/**
- Property for live chat delegate. Should implement UCLiveChatDelegate.
- */
-@property (nonatomic, weak) id <UCLiveChatDelegate> delegate;
 
 @end
 
@@ -69,6 +75,18 @@
  @param messages - History messages array
  */
 - (void)receiveHistory:(NSArray *)messages;
+
+/**
+ @brief Method called when message delivered.
+ @param message - Delivered message. Please refer to UCMessage.localID property to determine message identifier.
+ */
+- (void)messageDelivered:(UCCustomMessage *)message;
+
+/**
+ @brief Method called when message was not delivered.
+ @param message - Not delivered message. Please refer to UCMessage.localID property to determine message identifier.
+ */
+- (void)messageNotDelivered:(UCCustomMessage *)message;
 
 /*
  @brief Method called when live chat ready for a new conversation.

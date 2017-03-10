@@ -2,6 +2,7 @@
 
 @class UCEvent;
 @class UCFAQEntry;
+@class AiPushInAppAction;
 
 /**
  Main interface of event SDK. Initialize it with startLoggingWithAPISecret: . First get API secret from developer console.
@@ -46,9 +47,9 @@
 
 /**
  Logs event when action invoked.
- @param title - action title.
+ @param action - Action to be invoked.
  */
-- (void)sendActionInvokedEvent:(NSString *)title;
+- (void)sendActionInvokedEvent:(AiPushInAppAction *)action;
 
 /**
  @param crashReport - CLSReport report provided by crashlytics

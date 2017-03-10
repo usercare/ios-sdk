@@ -5,6 +5,8 @@
 @class UCImageStyle;
 @class UCButtonStyle;
 @class UCHeaderStyle;
+@class UCCustomMessage;
+@class AiQuickResponseStyle;
 
 /**
  * Instanse of this class contain settings of Live chat screen.
@@ -132,6 +134,11 @@
 @property (nonatomic, strong) UCHeaderStyle *userSettingsHeaderStyle;
 
 /**
+ Quick response message style
+ */
+@property (nonatomic, strong) AiQuickResponseStyle *quickResponseStyle;
+
+/**
  @brief Creates instanse of UCLiveChatStyle from dictionary.
  @param dictionary Parsed from JSON dictionary.
  @return instanse of UCLiveChatStyle.
@@ -144,5 +151,9 @@
  @return instanse of UCLiveChatStyle.
  */
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+
+- (UCLabelStyle *) styleForMessage: (UCCustomMessage *)message;
+
+- (UCLabelStyle *) timeStyleForMessage: (UCCustomMessage *)message;
 
 @end

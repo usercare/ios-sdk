@@ -3,6 +3,7 @@
 /**
  Model class containing action entity for UserCare SDK. Action entity represents any action message that comes into LiveChat.
  */
+__attribute__ ((deprecated))
 @interface UCActionEntity : NSObject
 
 /**

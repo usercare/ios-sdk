@@ -1,6 +1,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+extern NSString * const kUCFAQLinkCaption;
+extern NSString * const kUCFAQLinkScheme;
+
 @interface UCUtils : NSObject
 
 + (NSString *)convertPushTokenToString:(NSData *)data;
@@ -12,6 +15,8 @@
 //time
 + (NSString *)currentFormattedTimeForEvents;
 + (NSString *)currentFormattedTime;
++ (NSString *)formattedShortTimeForChatWithDate:(NSDate *)date;
++ (NSString *)formattedDateTimeForNewMessagesInChatWithDate:(NSDate *)date;
 + (NSString *)formattedTimeWithDate:(NSDate *)date;
 + (NSString *)formattedTimeForChatWithDate:(NSDate *)date;
 + (NSDate *)dateFromString:(NSString *)string;
@@ -22,5 +27,9 @@
 + (void)customizeTableView:(UITableView *)tableView backgroundWithColor:(UIColor *)color image:(NSString *)image repeat:(NSString *)repeat;
 
 + (BOOL)validateEmail:(NSString *)email;
+
++ (CGSize)sizeForText:(NSAttributedString *)text withFont:(UIFont *)font within:(CGFloat)maxWidth;
+
++ (NSAttributedString *)attributedText:(NSString *)text;
 
 @end
