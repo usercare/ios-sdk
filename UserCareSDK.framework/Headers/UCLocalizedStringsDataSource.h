@@ -41,7 +41,6 @@
 @property (nonatomic, strong) NSString *messagingPromptInvalid;
 @property (nonatomic, strong) NSString *messagingPromptEmpty;
 
-@property (nonatomic, strong) NSString *noTicketsTitle;
 @property (nonatomic, strong) NSString *ticketsTitle;
 @property (nonatomic, strong) NSString *ticketsOpenNew;
 @property (nonatomic, strong) NSString *ticketsTicketText;
@@ -50,6 +49,9 @@
 @property (nonatomic, strong) NSString *ticketsClosedText;
 @property (nonatomic, strong) NSString *ticketsBonusesText;
 @property (nonatomic, strong) NSString *ticketsMessagesWaitingText;
+@property (nonatomic, strong) NSString *noTicketsTitleText;
+@property (nonatomic, strong) NSString *noTicketsMessageText;
+@property (nonatomic, strong) NSString *createTicketButtonText;
 
 @property (nonatomic, strong) NSString *noNetworkAlertText;
 @property (nonatomic, strong) NSString *connectionError;
@@ -57,5 +59,11 @@
 @property (nonatomic, strong) NSString *dialogRetry;
 @property (nonatomic, strong) NSString *dialogCancel;
 @property (nonatomic, strong) NSString *dialogDismiss;
+
+@property (nonatomic, strong) NSString *titleFaq;
+@property (nonatomic, strong) NSString *titleVipLounge;
+@property (nonatomic, strong) NSString *titleMessaging;
+@property (nonatomic, strong) NSString *titleMyTickets;
+@property (nonatomic, strong) NSString *titleLandingPage;
 
 @end

@@ -39,14 +39,16 @@
  @brief Handle push notification from UserCare and open LiveChat
  @param userInfo - notification body
  @param completionHandler - handler that should be executed after notification processed
+ @return YES if push notification was handled by Agent.Ai SDK
  */
-- (void)didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler;
+- (BOOL)didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler;
 
 /**
  @brief Handle push notification from UserCare and open LiveChat
  @param userInfo - notification body
+ @return YES if push notification was handled by Agent.Ai SDK
  */
-- (void)didReceiveRemoteNotification:(NSDictionary *)userInfo;
+- (BOOL)didReceiveRemoteNotification:(NSDictionary *)userInfo;
 
 /**
  @brief Handle push notification with custom actions from UserCare
@@ -54,16 +56,18 @@
  @param userInfo - notification body
  @param responseInfo - action response info
  @param completionHandler - handler that should be executed after action processed
+ @return YES if push notification was handled by Agent.Ai SDK
  */
-- (void)handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo withResponseInfo:(NSDictionary *)responseInfo completionHandler:(void (^)())completionHandler;
+- (BOOL)handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo withResponseInfo:(NSDictionary *)responseInfo completionHandler:(void (^)())completionHandler;
 
 /**
  @brief Handle push notification with custom actions from UserCare
  @param identifier - action identifier
  @param userInfo - notification body
  @param completionHandler - handler that should be executed after action processed
+ @return YES if push notification was handled by Agent.Ai SDK
  */
-- (void)handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo completionHandler:(void (^)())completionHandler;
+- (BOOL)handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo completionHandler:(void (^)())completionHandler;
 
 @end
 
@@ -112,16 +116,6 @@
  @brief timestamp - timestamp of the date when action was sent
  */
 @property (nonatomic, strong) NSString *timestamp;
-
-/**
- @brief message - message to be displayed to user
- */
-@property (nonatomic, strong) NSString *message;
-
-/**
- @brief showMessage - determine if message should be displayed to user
- */
-@property (nonatomic, assign) BOOL showMessage;
 
 /**
  @brief callbackName - Name of the callback function to be executed by developer

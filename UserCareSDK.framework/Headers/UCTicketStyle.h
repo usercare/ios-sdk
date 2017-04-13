@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "UCCustomizable.h"
 
 @class UCTextStyle;
 @class UCTicketItemStyle;
@@ -8,6 +9,9 @@
 @class UCHeaderStyle;
 @class UCButtonStyle;
 @class UCLabelStyle;
+@class AiNoTicketsStyle;
+
+#pragma mark - UCTicketStyle
 
 /**
  * Instanse of this class contain settings of My Tickets screen.
@@ -33,11 +37,6 @@
  My tickets button style.
  */
 @property (nonatomic, strong) UCButtonStyle *myTicketsButtonStyle;
-
-/**
- Style of a empty Tickets list label warning. 
- */
-@property (nonatomic, strong) UCLabelStyle *emptyTicketsLabelStyle;
 
 /**
  Opened ticket cell style.
@@ -70,6 +69,11 @@
 @property (nonatomic, strong) UCHeaderStyle *detailsHeaderStyle;
 
 /**
+ Style for "My Tickets" screen when user have no tickets
+ */
+@property (nonatomic, strong) AiNoTicketsStyle *noTicketsStyle;
+
+/**
  @brief Creates instanse of UCTicketStyle from dictionary.
  @param dictionary Parsed from JSON dictionary.
  @return instanse of UCTicketStyle.
@@ -82,5 +86,34 @@
  @return instanse of UCTicketStyle.
  */
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+
+@end
+
+#pragma mark - AiNoTicketsStyle
+
+/**
+ @brief Style for tickets screen when customer have no tickets.
+ */
+@interface AiNoTicketsStyle : NSObject<UCStyle>
+
+/**
+ Background icon
+ */
+@property (nonatomic, strong) NSString *noTicketsImage;
+
+/**
+ Style for "Create ticket" button at bottom
+ */
+@property (nonatomic, strong) UCButtonStyle *createTicketButtonStyle;
+
+/**
+ Style for "No tickets" title
+ */
+@property (nonatomic, strong) UCTextStyle *noTicketsTitleStyle;
+
+/**
+ Style for "No tickets" message
+ */
+@property (nonatomic, strong) UCTextStyle *noTicketsMessageStyle;
 
 @end

@@ -1,9 +1,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-extern NSString * const kUCFAQLinkCaption;
-extern NSString * const kUCFAQLinkScheme;
-
 @interface UCUtils : NSObject
 
 + (NSString *)convertPushTokenToString:(NSData *)data;

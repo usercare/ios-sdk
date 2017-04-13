@@ -12,6 +12,7 @@
 @class UCLocalizedStringsDataSource;
 @class UCCacheSettings;
 @class UCLoggerSettings;
+@class AiCustomerProperties;
 
 /**
  Block used into startService method. Called when initialization is successful.
@@ -85,30 +86,35 @@ typedef void(^UCMyTicketsUpdatedBlock)(NSArray *myTickets);
  */
 @property (nonatomic, strong) NSString *appId;
 
+/**
+ Key for Events.
+ */
+@property (nonatomic, strong) NSString *eventsAPIKey;
+
+/**
+ AiCustomerProperties customer properties
+ */
+@property (nonatomic, strong) AiCustomerProperties *customerProperties;
+
 /** 
  Customer identifier received from UserCare.
  */
 @property (nonatomic, strong) NSString *customerId;
 
 /**
-  Key for Events.
+ Optional property. Will be seen in agent panel. Unless specified here SDK will prompt user to enter it upon opening live chat.
  */
-@property (nonatomic, strong) NSString *eventsAPIKey;
+//@property (nonatomic, strong) NSString *customerFirstName;
 
 /**
  Optional property. Will be seen in agent panel. Unless specified here SDK will prompt user to enter it upon opening live chat.
  */
-@property (nonatomic, strong) NSString *customerFirstName;
+//@property (nonatomic, strong) NSString *customerLastName;
 
 /**
  Optional property. Will be seen in agent panel. Unless specified here SDK will prompt user to enter it upon opening live chat.
  */
-@property (nonatomic, strong) NSString *customerLastName;
-
-/**
- Optional property. Will be seen in agent panel. Unless specified here SDK will prompt user to enter it upon opening live chat.
- */
-@property (nonatomic, strong) NSString *customerEmail;
+//@property (nonatomic, strong) NSString *customerEmail;
 
 /**
  Optional property. Will be used for definind caching policy. 
@@ -193,6 +199,11 @@ typedef void(^UCMyTicketsUpdatedBlock)(NSArray *myTickets);
 @property (nonatomic, strong) UCSettings *settings;
 
 /**
+ @brief Settings used for user properties.
+ */
+@property (nonatomic, strong, readonly) UCManagerSettings *_Nullable managerSettings;
+
+/**
  @brief Localization Settings used for customization.
  */
 @property (nonatomic, strong) UCLocalizedStringsDataSource *localizationSettings;
@@ -233,12 +244,6 @@ typedef void(^UCMyTicketsUpdatedBlock)(NSArray *myTickets);
     @param parent - Your ViewController that will be used as parent to present SDK navigation stack.
  */
 - (void)presentMyTicketsWithParent:(UIViewController *)parent;
-
-/**
- Opens FAQ with provided URL.
- @param url - NSString represantation of the FAQ URL. Should be in format "FAQ-XXXX".
- */
-- (void)openURL:(NSString *)url;
 
 /**
  @brief Initialize UC SDK.
@@ -347,6 +352,15 @@ Receives entry point for chat interface.
  @return insance of UCPush
  */
 + (UCPush *)push;
+
+#pragma mark - Deeplinks
+
+/**
+ Opens AgentAi SDK screens and resources byprovided url.
+ @param url - NSURL which came from the app or outside (add to app delegate's override).
+ @return YES - if url was processed by AgentAi SDK
+ */
++ (BOOL)openUrl:(NSURL *)url;
 
 #pragma mark - Device ID
 
