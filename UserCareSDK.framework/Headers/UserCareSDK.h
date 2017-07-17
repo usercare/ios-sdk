@@ -30,4 +30,7 @@ FOUNDATION_EXPORT const unsigned char UserCareSDKVersionString[];
 #import <UserCareSDK/UCUtils.h>
 #import <UserCareSDK/AiQuickResponseMessage.h>
 #import <UserCareSDK/AiQuickResponseStyle.h>
+#import <UserCareSDK/AiCardDeckStyle.h>
+#import <UserCareSDK/AiCardDeckMessage.h>
 #import <UserCareSDK/AiCustomerProperties.h>
+#import <UserCareSDK/UCLiveChatTicket.h>

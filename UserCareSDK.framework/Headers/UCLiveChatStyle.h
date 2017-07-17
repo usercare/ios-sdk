@@ -7,6 +7,7 @@
 @class UCHeaderStyle;
 @class UCCustomMessage;
 @class AiQuickResponseStyle;
+@class AiCardDeckStyle;
 
 /**
  * Instanse of this class contain settings of Live chat screen.
@@ -137,6 +138,11 @@
  Quick response message style
  */
 @property (nonatomic, strong) AiQuickResponseStyle *quickResponseStyle;
+
+/**
+ Card Deck message style
+ */
+@property (nonatomic, strong) AiCardDeckStyle *cardDeckStyle;
 
 /**
  @brief Creates instanse of UCLiveChatStyle from dictionary.

@@ -29,4 +29,6 @@
 
 + (NSAttributedString *)attributedText:(NSString *)text;
 
++ (NSString *)sanitizeString:(NSString *)string;
+
 @end

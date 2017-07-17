@@ -1,5 +1,7 @@
 #import <Foundation/Foundation.h>
 
+extern NSString * const kUCItemsKey;
+
 @class UCCustomMessage;
 @class UCLiveChatClient;
 @protocol UCLiveChatDelegate;

@@ -102,19 +102,9 @@ typedef void(^UCMyTicketsUpdatedBlock)(NSArray *myTickets);
 @property (nonatomic, strong) NSString *customerId;
 
 /**
- Optional property. Will be seen in agent panel. Unless specified here SDK will prompt user to enter it upon opening live chat.
+ Custom locale for the customer. Otherwise will be used default preferred locale.
  */
-//@property (nonatomic, strong) NSString *customerFirstName;
-
-/**
- Optional property. Will be seen in agent panel. Unless specified here SDK will prompt user to enter it upon opening live chat.
- */
-//@property (nonatomic, strong) NSString *customerLastName;
-
-/**
- Optional property. Will be seen in agent panel. Unless specified here SDK will prompt user to enter it upon opening live chat.
- */
-//@property (nonatomic, strong) NSString *customerEmail;
+@property (nonatomic, strong) NSLocale *customLocale;
 
 /**
  Optional property. Will be used for definind caching policy. 

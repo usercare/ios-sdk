@@ -11,9 +11,11 @@
 extern NSString * const kAITypeKey;
 extern NSString * const kAITextKey;
 extern NSString * const kAIQuickReplyKey;
+extern NSString * const kAiPayloadKey;
+extern NSString * const kAiPostbackKey;
 
 @interface AiMessageBody : NSObject
 
-@property (copy, nonatomic, readonly) NSString *messageType;
+//@property (copy, nonatomic, readonly) NSString *messageType;
 
 @end

@@ -57,8 +57,10 @@
 @property (nonatomic, strong) NSString *connectionError;
 
 @property (nonatomic, strong) NSString *dialogRetry;
-@property (nonatomic, strong) NSString *dialogCancel;
 @property (nonatomic, strong) NSString *dialogDismiss;
+@property (nonatomic, strong) NSString *cancel;
+@property (nonatomic, strong) NSString *landingCancel;
+@property (nonatomic, strong) NSString *dismiss;
 
 @property (nonatomic, strong) NSString *titleFaq;
 @property (nonatomic, strong) NSString *titleVipLounge;

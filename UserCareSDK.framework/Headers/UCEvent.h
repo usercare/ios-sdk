@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
-extern NSString *const kUCEventSessionEnd;
+extern NSString *const kUCEventSession;
 extern NSString *const kUCEventPurchaseSuccess;
 extern NSString *const kUCEventPurchaseFailed;
 extern NSString *const kUCEventCrash;
@@ -13,7 +13,7 @@ extern NSString *const kUCEventCrash;
 @interface UCEvent : NSObject
 
 /**
- @brief Type of event. Should be NSString no longer than 63 characters, alphanumeric with hyphens allowed.NSString representation of time when event occured. Predefined event types are: kUCEventSession, kUCEventSessionEnd, kUCEventPurchaseSuccess, kUCEventPurchaseFailed
+ @brief Type of event. Should be NSString no longer than 63 characters, alphanumeric with hyphens allowed.NSString representation of time when event occured. Predefined event types are: kUCEventSession, kUCEventSession, kUCEventPurchaseSuccess, kUCEventPurchaseFailed
  */
 @property (nonatomic, copy) NSString *eventType;
 
@@ -79,7 +79,7 @@ extern NSString *const kUCEventCrash;
 
 /**
  @return instance of UCEvent with type.
- @param eventType - user-defined type of event. Should be NSString no longer than 63 characters, alphanumeric with hyphens allowed. Predefined event types are: kUCEventSession, kUCEventSessionEnd, kUCEventPurchaseSuccess, kUCEventPurchaseFailed
+ @param eventType - user-defined type of event. Should be NSString no longer than 63 characters, alphanumeric with hyphens allowed. Predefined event types are: kUCEventSession, kUCEventSession, kUCEventPurchaseSuccess, kUCEventPurchaseFailed
  */
 - (id)initWithEventType:(NSString *)eventType;
 

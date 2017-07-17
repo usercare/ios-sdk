@@ -57,10 +57,8 @@
 - (void)sendCrashlyticsCrashEvent:(id)crashReport;
 
 /**
- Extends session timeout. Executed each time when network operation was pefomed by UC SDK.
- Session timeout controlled by settings property: [UCManager sharedInstance].settings.sessionContinuationInterval
+ @return validates session for expiration. YES if session valid.
  */
-- (void)extendSession;
-
+- (BOOL)validateSessionTimeout;
 
 @end

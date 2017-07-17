@@ -3,6 +3,7 @@
 #import "UCMessage.h"
 #import "AiMessageBody.h"
 #import "AiQuickResponseMessage.h"
+#import "AiCardDeckMessage.h"
 
 extern NSString *const kAIRoleCustomer;
 extern NSString *const kAIRoleAgent;
@@ -11,6 +12,7 @@ extern NSString *const kAIRoleSystem;
 extern NSString * const kAIMessageTypeQR;
 extern NSString * const kAIMessageTypeImage;
 extern NSString * const kAIMessageTypeText;
+extern NSString * const kAIMessageTypeCardDeck;
 
 /**
  UCMessageType. Represents the different types of a message.
@@ -19,35 +21,39 @@ typedef NS_ENUM(NSUInteger, UCMessageType) {
     /**
      AIMessageTypeSystem Messages received on state change i.e. the user has open live chat.
      */
-    AIMessageTypeSystem = 0,
+    AiMessageTypeSystem = 0,
     /**
      AIMessageTypeRegular User or agent chat message.
      */
-    AIMessageTypeRegular,
+    AiMessageTypeRegular,
     /**
      AIMessageTypeFAQLink Message cotain link what could be opened.
      */
-    AIMessageTypeFAQLink,
-    /**
-     AIMessageTypeAction Message when the User receive a bonuce.
-     */
-    AIMessageTypeAction __attribute__((deprecated)),
+    AiMessageTypeFAQLink,
     /**
      AIMessageTypeImage image message.
      */
-    AIMessageTypeImage,
+    AiMessageTypeImage,
     /**
-     AIMessageTypeQuickResponse quick response message.
+     AiMessageTypeCardDeck Card Deck message.
      */
-    AIMessageTypeQuickResponse,
+    AiMessageTypeCardDeck,
     /**
-     AIMessageTypeQuickReply user's reply to quick response.
+     AiMessageTypeCardDeckReply user's reply to card deck button.
      */
-    AIMessageTypeQuickReply,
+    AiMessageTypeCardDeckReply,
+    /**
+     AiMessageTypeQuickResponse quick response message.
+     */
+    AiMessageTypeQuickResponse,
+    /**
+     AiMessageTypeQuickReply user's reply to quick response.
+     */
+    AiMessageTypeQuickReply,
     /**
      AIMessageTypeText text message.
      */
-    AIMessageTypeText
+    AiMessageTypeText
 };
 
 /**
@@ -90,6 +96,8 @@ typedef NS_ENUM(NSUInteger, UCMessageType) {
 @property (nonatomic, assign) BOOL isRead;
 
 @property (nonatomic, strong) AiQuickReply *quickReply;
+
+@property (nonatomic, strong) AiCardButton *cardButton;
 
 /**
  @brief Mhetod is used for creating instance of the message from parsed dictionary.
