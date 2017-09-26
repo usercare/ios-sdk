@@ -6,17 +6,17 @@
 @class UCLiveChatStyle;
 @class UCTicketStyle;
 
-extern NSString * const kUCJSONKeyFAQ;
-extern NSString * const kUCJSONKeyLink;
-extern NSString * const kUCJSONKeyEmpty;
+extern NSString * const _Nonnull kUCJSONKeyFAQ;
+extern NSString * const _Nonnull kUCJSONKeyLink;
+extern NSString * const _Nonnull kUCJSONKeyEmpty;
 
-extern NSString * const kUCBackgroundImageRepeat;
-extern NSString * const kUCBackgroundImageRepeatX;
-extern NSString * const kUCBackgroundImageRepeatY;
-extern NSString * const kUCBackgroundImageNoRepeatFit;
-extern NSString * const kUCBackgroundImageNoRepeatFill;
-extern NSString * const kUCBackgroundImageNoRepeatCenter;
-extern NSString * const kUCBackgroundImageNoRepeatCrop;
+extern NSString * const _Nonnull kUCBackgroundImageRepeat;
+extern NSString * const _Nonnull kUCBackgroundImageRepeatX;
+extern NSString * const _Nonnull kUCBackgroundImageRepeatY;
+extern NSString * const _Nonnull kUCBackgroundImageNoRepeatFit;
+extern NSString * const _Nonnull kUCBackgroundImageNoRepeatFill;
+extern NSString * const _Nonnull kUCBackgroundImageNoRepeatCenter;
+extern NSString * const _Nonnull kUCBackgroundImageNoRepeatCrop;
 
 extern NSUInteger const kUCSessionDefaultInterval;
 
@@ -24,13 +24,6 @@ extern NSUInteger const kUCSessionDefaultInterval;
  * Contains UI settings, parsed from server responce. Initiates with initWithStatusDictionary:.
  */
 @interface UCSettings : NSObject
-
-/**
- * @brief Creates instance of UCSettings object.
- * @param dictionary parsed dictionary from JSON.
- * @return UCSettings object instance.
- */
-- (instancetype)initWithStatusDictionary:(NSDictionary *)dictionary;
 
 /**
  * Defines whether Live Chat will be displayed.
@@ -79,11 +72,6 @@ extern NSUInteger const kUCSessionDefaultInterval;
 @property (nonatomic, strong) NSString *VIPLoungeURL;
 
 /**
- * String of a Landing page URL address
- */
-@property (nonatomic, strong) NSString *landingPageURL;
-
-/**
  * Style of a VIP Lounge.
  */
 @property (nonatomic, strong) UCButtonStyle *vipLoungeButtonStyle;
@@ -110,5 +98,18 @@ extern NSUInteger const kUCSessionDefaultInterval;
  * @see UCTicketStyle.
  */
 @property (nonatomic, strong) UCTicketStyle *ticketStyle;
+
+@property (nonatomic, readonly, copy) NSString * _Nonnull defaultLocale;
+
+@property (nonatomic, readonly, copy) NSString * _Nonnull translationsLink;
+
+@property (nonatomic, readonly, copy) NSString * _Nonnull faqsLink;
+
+/**
+ * @brief Creates instance of UCSettings object.
+ * @param dictionary parsed dictionary from JSON.
+ * @return UCSettings object instance.
+ */
+- (instancetype _Nonnull)initWithStatusDictionary:(NSDictionary * _Nonnull)dictionary;
 
 @end

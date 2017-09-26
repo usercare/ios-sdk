@@ -21,14 +21,14 @@
 @property (nonatomic, strong) UCTextStyle *textStyle;
 
 /**
- @brief Defines a text alignment
+ @brief Defines a text location
  */
 @property (nonatomic, strong) NSString *textLocation;
 
 /**
- @brief Buttol label text
+ @brief Defines a text alignment
  */
-@property (nonatomic, strong) NSString *text;
+@property (nonatomic, strong) NSString *textAlignment;
 
 /**
  @brief Defines button background color if backbround image is not set.

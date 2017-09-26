@@ -10,14 +10,16 @@
 + (UIColor *)colorFromHexString:(NSString *)hexString;
 
 //time
++ (NSDateFormatter *)localizedFormatter;
 + (NSString *)currentFormattedTimeForEvents;
 + (NSString *)currentFormattedTime;
 + (NSString *)formattedShortTimeForChatWithDate:(NSDate *)date;
 + (NSString *)formattedDateTimeForNewMessagesInChatWithDate:(NSDate *)date;
 + (NSString *)formattedTimeWithDate:(NSDate *)date;
-+ (NSString *)formattedTimeForChatWithDate:(NSDate *)date;
 + (NSDate *)dateFromString:(NSString *)string;
 + (NSString *)formattedTicketDateWithDateString:(NSString *)initialDateString;
++ (NSString *)formattedDate:(NSDate *)date withFormat:(NSString *)format;
++ (BOOL)isToday:(NSDate *)date;
 
 + (NSString *)stringWithLocalizedString:(NSString *)localizedString defaultString:(NSString *)defaultString;
 
@@ -30,5 +32,11 @@
 + (NSAttributedString *)attributedText:(NSString *)text;
 
 + (NSString *)sanitizeString:(NSString *)string;
+
++ (nullable id)jsonFromString:(NSString * _Nullable)json error:(NSError **)error;
+
++ (nullable id)jsonFromData:(NSData * _Nullable)data error:(NSError **)error;
+
++ (void)shortenBackTitle:(UINavigationItem *)navigationItem;
 
 @end

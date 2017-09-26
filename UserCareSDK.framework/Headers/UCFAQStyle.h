@@ -73,6 +73,26 @@
 @property (nonatomic, strong) UCFAQDialogStyle *faqYesButtonDialogStyle;
 
 /**
+ Negative button style
+ */
+@property (nonatomic, strong) UCLabelStyle *faqNoButtonStyle;
+
+/**
+ Positive feedback button style
+ */
+@property (nonatomic, strong) UCLabelStyle *faqYesButtonStyle;
+
+/**
+ FAQ feedback label style
+ */
+@property (nonatomic, strong) UCLabelStyle *faqFeedbackLabelStyle;
+
+/**
+ FAQ feedback label style
+ */
+@property (nonatomic, strong) UCLabelStyle *faqLastUpdatedLabelStyle;
+
+/**
  @brief Creates instanse of UCFAQStyle from dictionary.
  @param dictionary Parsed from JSON dictionary.
  @return instanse of UCFAQStyle.

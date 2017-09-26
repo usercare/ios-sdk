@@ -58,7 +58,7 @@
  @param completionHandler - handler that should be executed after action processed
  @return YES if push notification was handled by Agent.Ai SDK
  */
-- (BOOL)handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo withResponseInfo:(NSDictionary *)responseInfo completionHandler:(void (^)())completionHandler;
+- (BOOL)handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo withResponseInfo:(NSDictionary *)responseInfo completionHandler:(void (^)(void))completionHandler;
 
 /**
  @brief Handle push notification with custom actions from UserCare
@@ -67,7 +67,7 @@
  @param completionHandler - handler that should be executed after action processed
  @return YES if push notification was handled by Agent.Ai SDK
  */
-- (BOOL)handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo completionHandler:(void (^)())completionHandler;
+- (BOOL)handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo completionHandler:(void (^)(void))completionHandler;
 
 @end
 

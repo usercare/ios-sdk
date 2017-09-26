@@ -22,11 +22,11 @@
 
 #pragma mark - AiCardButtonType
 
-typedef enum {
+typedef NS_ENUM(NSUInteger, AiCardButtonType) {
     Postback,
     WebUrl,
     Call
-} AiCardButtonType;
+};
 
 #pragma mark - AiCardDeckMessage
 

@@ -1,4 +1,6 @@
 #import <Foundation/Foundation.h>
+#import "UCCustomizable.h"
+#import <UIKit/UIKit.h>
 
 @class UCTextStyle;
 @class UCLabelStyle;
@@ -8,6 +10,7 @@
 @class UCCustomMessage;
 @class AiQuickResponseStyle;
 @class AiCardDeckStyle;
+@class AiAttachentIconStyle;
 
 /**
  * Instanse of this class contain settings of Live chat screen.
@@ -79,6 +82,10 @@
  */
 @property (nonatomic, strong) UCLabelStyle *greetingMessageTextStyle;
 
+@property (nonatomic, strong) AiAttachentIconStyle *entryImageAttachment;
+
+@property (nonatomic, strong) AiAttachentIconStyle *entryPhotoAttachment;
+
 /**
  Style of a send button.
  */
@@ -108,6 +115,11 @@
  Display user settings on create new ticket.
  */
 @property (nonatomic, assign) BOOL showUserSettingsOnCreate;
+
+/**
+ Style of a cancel(back) button.
+ */
+@property (nonatomic, strong) UCButtonStyle *userSettingsCancelStyle;
 
 /**
  Style of a live chat input toolbar.
@@ -145,6 +157,11 @@
 @property (nonatomic, strong) AiCardDeckStyle *cardDeckStyle;
 
 /**
+ Group chat messages from a person within interval (hide date, smaller spacing) in seconds. Default value is 5 minutes.
+ */
+@property (nonatomic, assign) NSTimeInterval groupMessagesWithinInterval;
+
+/**
  @brief Creates instanse of UCLiveChatStyle from dictionary.
  @param dictionary Parsed from JSON dictionary.
  @return instanse of UCLiveChatStyle.
@@ -161,5 +178,12 @@
 - (UCLabelStyle *) styleForMessage: (UCCustomMessage *)message;
 
 - (UCLabelStyle *) timeStyleForMessage: (UCCustomMessage *)message;
+
+@end
+
+@interface AiAttachentIconStyle : NSObject<UCStyle>
+
+@property (nonatomic, strong) UIColor *backgroundColor;
+@property (nonatomic, strong) NSString *icon;
 
 @end

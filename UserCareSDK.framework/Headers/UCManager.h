@@ -104,7 +104,12 @@ typedef void(^UCMyTicketsUpdatedBlock)(NSArray *myTickets);
 /**
  Custom locale for the customer. Otherwise will be used default preferred locale.
  */
-@property (nonatomic, strong) NSLocale *customLocale;
+@property (nonatomic, strong) NSLocale * _Nullable customLocale;
+
+/**
+ Default UIFont for the SDK. Will be to SDK controls that have no font customization.
+ */
+@property (nonatomic, strong) NSString * _Nullable defaultFontName;
 
 /**
  Optional property. Will be used for definind caching policy. 
@@ -115,6 +120,11 @@ typedef void(^UCMyTicketsUpdatedBlock)(NSArray *myTickets);
  Optional property. Will be used for logging customizing.
  */
 @property (nonatomic, strong) UCLoggerSettings *loggerSettings;
+
+/**
+ Optional property. Make sdk use CDN in development mode and lead to resources directly. Warning! This feature may slow sdk in production.   
+ */
+@property (nonatomic, assign) BOOL developmentMode;
 
 /**
  @brief Create UCManagerSettings instance with Application ID and Events API key taken from Info.plist file.  
@@ -140,6 +150,12 @@ typedef void(^UCMyTicketsUpdatedBlock)(NSArray *myTickets);
  @return UCManagerSettings
  */
 + (instancetype)settingsWithAppId:(NSString *)appId andEventsApiKey:(NSString *)eventsKey;
+
+/**
+ @breif Provides system or custom locale
+ @return locale to be used by sdk.
+ */
+- (NSLocale * _Nonnull)locale;
 
 @end
 
@@ -192,11 +208,6 @@ typedef void(^UCMyTicketsUpdatedBlock)(NSArray *myTickets);
  @brief Settings used for user properties.
  */
 @property (nonatomic, strong, readonly) UCManagerSettings *_Nullable managerSettings;
-
-/**
- @brief Localization Settings used for customization.
- */
-@property (nonatomic, strong) UCLocalizedStringsDataSource *localizationSettings;
 
 /**
     @brief Shows  SDK contact us screen if possible. Property isLiveChatEnabled indicates whether this function is available.

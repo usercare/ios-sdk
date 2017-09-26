@@ -95,6 +95,8 @@ typedef NS_ENUM(NSUInteger, UCMessageType) {
  */
 @property (nonatomic, assign) BOOL isRead;
 
+@property (nonatomic, assign) BOOL timeHidden;
+
 @property (nonatomic, strong) AiQuickReply *quickReply;
 
 @property (nonatomic, strong) AiCardButton *cardButton;
@@ -105,6 +107,10 @@ typedef NS_ENUM(NSUInteger, UCMessageType) {
  @return instance of a custom message.
  */
 + (UCCustomMessage *)messageWithDictionary:(NSDictionary *)dictionary;
+
+- (BOOL)isOutgoing;
+
+- (BOOL)isSystem;
 
 /**
  @return NSDictionary representation of message.
