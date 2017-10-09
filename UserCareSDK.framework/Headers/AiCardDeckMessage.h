@@ -22,9 +22,21 @@
 
 #pragma mark - AiCardButtonType
 
+/**
+ * @brief Type of card deck button
+ */
 typedef NS_ENUM(NSUInteger, AiCardButtonType) {
+    /**
+     * @brief send Postback answer to agent
+     */
     Postback,
+    /**
+     * @brief Open web url in safari / deeplink
+     */
     WebUrl,
+    /**
+     * @brief Open dialer
+     */
     Call
 };
 

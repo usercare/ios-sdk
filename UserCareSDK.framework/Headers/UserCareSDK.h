@@ -19,6 +19,7 @@ FOUNDATION_EXPORT const unsigned char UserCareSDKVersionString[];
 #import <UserCareSDK/UCImageStyle.h>
 #import <UserCareSDK/UCLabelStyle.h>
 #import <UserCareSDK/UCTicketStyle.h>
+#import <UserCareSDK/UCTicketItemStyle.h>
 #import <UserCareSDK/UCLocalizedStringsDataSource.h>
 #import <UserCareSDK/UCLiveChatStyle.h>
 #import <UserCareSDK/UCFAQStyle.h>
@@ -34,3 +35,4 @@ FOUNDATION_EXPORT const unsigned char UserCareSDKVersionString[];
 #import <UserCareSDK/AiCardDeckMessage.h>
 #import <UserCareSDK/AiCustomerProperties.h>
 #import <UserCareSDK/UCLiveChatTicket.h>
+
