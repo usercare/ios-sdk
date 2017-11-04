@@ -12,6 +12,7 @@ extern NSString * const kUCJSONKeyLabelBackgroundColor;
 @property (nonatomic, strong) NSString *fontFamily;
 @property (nonatomic, strong) NSString *fontStyle;
 @property (nonatomic, strong) UIColor *textColor;
+@property (nonatomic, strong) UIColor *hintColor;
 @property (nonatomic, strong) NSNumber *fontSize;
 
 /**

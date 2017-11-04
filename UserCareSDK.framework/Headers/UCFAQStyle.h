@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @class UCButtonStyle;
 @class UCLabelStyle;
@@ -58,9 +59,20 @@
 @property (nonatomic, strong) UCHeaderStyle *searchBarStyle;
 
 /**
+ Background color of input field
+ */
+@property (nonatomic, strong) UIColor *searchBarInputBackgroundColor;
+
+
+/**
  Style of a search Button.
  */
 @property (nonatomic, strong) UCButtonStyle *searchButtonStyle;
+
+/**
+ Style of a back button
+ */
+@property (nonatomic, strong) UCButtonStyle *closeSearchButtonStyle;
 
 /**
  Negative dialog buttons style.
@@ -88,9 +100,14 @@
 @property (nonatomic, strong) UCLabelStyle *faqFeedbackLabelStyle;
 
 /**
- FAQ feedback label style
+ FAQ last updated label style
  */
 @property (nonatomic, strong) UCLabelStyle *faqLastUpdatedLabelStyle;
+
+/**
+ FAQ content style
+ */
+@property (nonatomic, strong) UCLabelStyle *faqContentStyle;
 
 /**
  @brief Creates instanse of UCFAQStyle from dictionary.

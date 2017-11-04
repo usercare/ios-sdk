@@ -56,6 +56,11 @@ extern NSUInteger const kUCSessionDefaultInterval;
 @property (nonatomic, assign) BOOL faqShouldDisplayVipLounge;
 
 /**
+ * @brief Display shorten back title of previous screen or just back arrow. Default YES.
+ */
+@property (nonatomic, assign) BOOL showNavigationBackTitle;
+
+/**
  * Timeout of session.
  * Should be set up.
  */

@@ -8,6 +8,7 @@
 
 + (void)customizeBackgroundView:(UIImageView *)view withImage:(UIImage *)image mode:(NSString *)mode;
 + (UIColor *)colorFromHexString:(NSString *)hexString;
++ (NSString *)colorToHexString:(UIColor *)color;
 
 //time
 + (NSDateFormatter *)localizedFormatter;
@@ -37,6 +38,10 @@
 
 + (nullable id)jsonFromData:(NSData * _Nullable)data error:(NSError **)error;
 
-+ (void)shortenBackTitle:(UINavigationItem *)navigationItem;
++ (void)applyTitle:(UIViewController * _Nonnull)controller title:(NSString *)title;
+
++ (void)shortenBackTitle:(UINavigationItem * _Nullable)navigationItem;
+
++ (void)hideBackTitle:(UINavigationItem * _Nullable)navigationItem;
 
 @end
