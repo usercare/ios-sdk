@@ -13,6 +13,8 @@
 @class UCCacheSettings;
 @class UCLoggerSettings;
 @class AiCustomerProperties;
+@class UCLiveChatTicket;
+@class UCCustomMessage;
 
 /**
  Block used into startService method. Called when initialization is successful.
@@ -25,9 +27,13 @@ typedef void(^UCInitializeSuccessfulBlock)(void);
 typedef void(^UCInitializeFailedBlock)(NSError *error);
 
 /**
- Block used into updateMyTickets method.
+ * @brief Callback block returning list tickets.
  */
-typedef void(^UCMyTicketsUpdatedBlock)(NSArray *myTickets);
+typedef void(^UCMyTicketsUpdatedBlock)(NSArray<UCLiveChatTicket *> *myTickets);
+/**
+ * @brief Callback block returning list of messages for closed ticket.
+ */
+typedef void(^AiTicketDetailsBlock)(NSNumber *ticketId, NSArray<UCCustomMessage *> *messages);
 
 /**
  UserCare Manager delegate. 
@@ -222,6 +228,8 @@ typedef void(^UCMyTicketsUpdatedBlock)(NSArray *myTickets);
  */
 - (void)presentLiveChatWithParams:(NSDictionary *_Nullable)params andParent:(UIViewController *)parent;
 
+- (void)presentTranscriptionForTicket:(NSNumber * _Nonnull)ticketId withParent:(UIViewController *)parent;
+
 /**
     Shows  SDK FAQ if possible. Property isFAQEnabled indicates whether this function is available.
     @param parent - Your ViewController that will be used as parent to present SDK navigation stack.
@@ -273,10 +281,11 @@ typedef void(^UCMyTicketsUpdatedBlock)(NSArray *myTickets);
 
 /**
  @brief Receives new tickets from server. Can be called if startService method was called before.
- @param completionBlock - completion block called after my tickets update.
- 
+ @param completion - completion block called after my tickets update which will also return list of tickets.
  */
-+ (void)updateMyTicketsWithCompletion:(UCMyTicketsUpdatedBlock)completionBlock;
++ (void)updateMyTicketsWithCompletion:(UCMyTicketsUpdatedBlock _Nullable)completion;
+
++ (void)getTicketDetails:(NSNumber * _Nonnull)ticketId completion:(AiTicketDetailsBlock _Nullable)completion;
 
 /**
 * Creates VIP lounge button. Can be called anytime, returns invisible button if VIP lounge is unavailable. Visibility will be updated automatically.

@@ -1,5 +1,5 @@
-#ifndef UCCustomizable_h
-#define UCCustomizable_h
+
+#import <Foundation/Foundation.h>
 
 /**
  * @discussion Abstract protocol for style.
@@ -37,4 +37,3 @@
 
 @end
 
-#endif /* UCCustomizable_h */

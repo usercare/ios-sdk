@@ -10,6 +10,7 @@ extern NSString *const kUCEventCrash;
  Class represents event model used by EventLogger.
  */
 
+__attribute__ ((deprecated))
 @interface UCEvent : NSObject
 
 /**
@@ -102,6 +103,6 @@ extern NSString *const kUCEventCrash;
 /**
  @return flag that allows event to be sent to server
  */
-- (BOOL)readyToSync;
+- (BOOL)readyToSync __deprecated;
 
 @end

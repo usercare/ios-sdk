@@ -32,12 +32,6 @@ extern NSString * const kUCItemsKey;
 - (void)markMessagesAsRead:(NSArray *)messages;
 
 /**
- * @brief Cancel message delivery, initiated by user (for example file upload).
- * @param message - message to be cancelled.
- */
-- (void)cancelMessage:(UCCustomMessage *)message;
-
-/**
  @brief Initialize connection. 
  */
 - (void)connect;

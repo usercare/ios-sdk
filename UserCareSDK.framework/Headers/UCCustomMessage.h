@@ -108,6 +108,8 @@ typedef NS_ENUM(NSUInteger, UCMessageType) {
  */
 + (UCCustomMessage *)messageWithDictionary:(NSDictionary *)dictionary;
 
++ (UCCustomMessage *)historyMessageWithDictionary:(NSDictionary *)dictionary;
+
 - (BOOL)isOutgoing;
 
 - (BOOL)isSystem;

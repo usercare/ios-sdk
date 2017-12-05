@@ -22,18 +22,18 @@
  @brief Initialize UCPush with UCManager instance
  @param ucManager - UCManager instance
  */
-- (instancetype)initWithManager:(UCManager *) ucManager;
+- (instancetype _Nonnull)initWithManager:(UCManager * _Nonnull) ucManager;
 
 /**
  Stores APNS device token for the further usage
  @param pushToken - push notifications token
  */
-- (void)registeredForPushNotifications:(NSData *)pushToken;
+- (void)registeredForPushNotifications:(NSData * _Nullable)pushToken;
 
 /**
  @return push notifications token
  */
-- (NSData *)pushToken;
+- (NSData * _Nullable)pushToken;
 
 /**
  @brief Handle push notification from UserCare and open LiveChat
@@ -81,7 +81,7 @@
  @param userInfo - received notification
  @return parsed model or nil (if parse error occur)
  */
-+ (AiPushMessage *)messageWithDictionary:(NSDictionary *)userInfo;
++ (AiPushMessage * _Nullable)messageWithDictionary:(NSDictionary * _Nullable)userInfo;
 
 @end
 
@@ -95,17 +95,17 @@
  @param rawAction - NSDictionary representation of AiPushInAppAction
  @return parsed model
  */
-+ (AiPushInAppAction *)actionWithDictionary:(NSDictionary *)rawAction;
++ (AiPushInAppAction * _Nonnull)actionWithDictionary:(NSDictionary * _Nonnull)rawAction;
 
 /**
  @brief imageUrl - path to the image to be displayed to user
  */
-@property (nonatomic, strong) NSString *imageUrl;
+@property (nonatomic, strong, nullable) NSString *imageUrl;
 
 /**
  @brief key - unique identifier string
  */
-@property (nonatomic, strong) NSString *key;
+@property (nonatomic, strong, nonnull) NSString *key;
 
 /**
  @brief identifier - push id
@@ -113,18 +113,28 @@
 @property (nonatomic, assign) NSInteger identifier;
 
 /**
+ @brief encryptedActionId - action identifier used for invocation reporting
+ */
+@property (nonatomic, strong, nullable) NSString * encryptedActionId;
+
+/**
+ @brief encryptedActionInvocationId - action invocation identifier used for invocation reporting
+ */
+@property (nonatomic, strong, nullable) NSString * encryptedActionInvocationId;
+
+/**
  @brief timestamp - timestamp of the date when action was sent
  */
-@property (nonatomic, strong) NSString *timestamp;
+@property (nonatomic, strong, nonnull) NSString *timestamp;
 
 /**
  @brief callbackName - Name of the callback function to be executed by developer
  */
-@property (nonatomic, strong) NSString *callbackName;
+@property (nonatomic, strong, nullable) NSString *callbackName;
 
 /**
  @brief callbackData - Data of the callback function
  */
-@property (nonatomic, strong) NSString *callbackData;
+@property (nonatomic, strong, nullable) NSString *callbackData;
 
 @end

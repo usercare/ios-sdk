@@ -67,11 +67,6 @@ extern NSUInteger const kUCSessionDefaultInterval;
 @property (nonatomic, strong) NSNumber *sessionContinuationInterval;
 
 /**
- * An AppID used for events
- */
-@property (nonatomic, strong) NSNumber *customerAppIdForEvents;
-
-/**
  * String of a VIP Lounge URL address
  */
 @property (nonatomic, strong) NSString *VIPLoungeURL;
@@ -79,30 +74,30 @@ extern NSUInteger const kUCSessionDefaultInterval;
 /**
  * Style of a VIP Lounge.
  */
-@property (nonatomic, strong) UCButtonStyle *vipLoungeButtonStyle;
+@property (nonatomic, strong, nonnull) UCButtonStyle *vipLoungeButtonStyle;
 
 /**
  * Style of a landing page button.
  */
-@property (nonatomic, strong) UCButtonStyle *landingPageButtonStyle;
+@property (nonatomic, strong, nonnull) UCButtonStyle *landingPageButtonStyle;
 
 /**
  * Style of a FAQ screen.
  * @see UCFAQStyle.
  */
-@property (nonatomic, strong) UCFAQStyle *FAQStyle;
+@property (nonatomic, strong, nonnull) UCFAQStyle *FAQStyle;
 
 /**
  * Style of a Live Chat screen.
  * @see UCLiveChatStyle.
  */
-@property (nonatomic, strong) UCLiveChatStyle *liveChatStyle;
+@property (nonatomic, strong, nonnull) UCLiveChatStyle *liveChatStyle;
 
 /**
  * Style of a Tickets screen.
  * @see UCTicketStyle.
  */
-@property (nonatomic, strong) UCTicketStyle *ticketStyle;
+@property (nonatomic, strong, nonnull) UCTicketStyle *ticketStyle;
 
 @property (nonatomic, readonly, copy) NSString * _Nonnull defaultLocale;
 

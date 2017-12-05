@@ -44,4 +44,6 @@
 
 + (void)hideBackTitle:(UINavigationItem * _Nullable)navigationItem;
 
++ (NSArray<NSString *> * _Nonnull)allPropertyNames: (Class _Nonnull)clazz;
+
 @end

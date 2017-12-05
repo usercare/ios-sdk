@@ -61,6 +61,11 @@
 
 @property (strong, nonatomic) NSNumber *messageId;
 
+/**
+ * @brief Additional message metadata to be sent as `properties` field
+ */
+@property (nonatomic, strong, readonly) NSMutableDictionary *properties;
+
 #pragma mark - Initialization
 
 /**
